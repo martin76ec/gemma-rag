@@ -1,0 +1,90 @@
+{
+  "key": "grid-5-k4",
+  "system": "RAG simple",
+  "id": "q2",
+  "type": "factual",
+  "question": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+  "reference": "La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.",
+  "sources": [
+    "06_garantias.txt"
+  ],
+  "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:0], [10_comparativa_competencia:1].\n\nLa garantía extendida es opcional hasta 60 meses [06_garantias:0].\n\nEl costo de la ampliación es de +59 € [06_garantias:0].",
+  "retrieved_contexts": [
+    "Tabla de garantías — Lumina Robotics\nGarantía estándar por modelo:\n- LR-100: 24 meses.\nGarantía extendida no disponible.\n- LR-200: 36 meses.\nGarantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso.",
+    "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n5.\nSe establece una línea de soporte preferente para incidencias del LR-200, dada su criticidad para el negocio.",
+    "  Punto débil: app limitada, no soporta gestión multi-planta.\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.",
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB"
+  ],
+  "documents": [
+    {
+      "id": "06_garantias:0",
+      "source": "06_garantias.txt",
+      "text": "Tabla de garantías — Lumina Robotics\nGarantía estándar por modelo:\n- LR-100: 24 meses.\nGarantía extendida no disponible.\n- LR-200: 36 meses.\nGarantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso.",
+      "score": 0.9024381041526794
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:2",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n5.\nSe establece una línea de soporte preferente para incidencias del LR-200, dada su criticidad para el negocio.",
+      "score": 0.8837460279464722
+    },
+    {
+      "id": "10_comparativa_competencia:1",
+      "source": "10_comparativa_competencia.txt",
+      "text": "  Punto débil: app limitada, no soporta gestión multi-planta.\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.",
+      "score": 0.8803497552871704
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+      "score": 0.8739471435546875
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+      "documents": [
+        {
+          "id": "06_garantias:0",
+          "source": "06_garantias.txt",
+          "text": "Tabla de garantías — Lumina Robotics\nGarantía estándar por modelo:\n- LR-100: 24 meses.\nGarantía extendida no disponible.\n- LR-200: 36 meses.\nGarantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso.",
+          "score": 0.9024381041526794
+        },
+        {
+          "id": "05_acta_reunion_q3_2024:2",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n5.\nSe establece una línea de soporte preferente para incidencias del LR-200, dada su criticidad para el negocio.",
+          "score": 0.8837460279464722
+        },
+        {
+          "id": "10_comparativa_competencia:1",
+          "source": "10_comparativa_competencia.txt",
+          "text": "  Punto débil: app limitada, no soporta gestión multi-planta.\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.",
+          "score": 0.8803497552871704
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+          "score": 0.8739471435546875
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 616,
+  "output_tokens": 679,
+  "seconds": 9.693087571000433,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?\nDocumentos:\n[06_garantias:0] Tabla de garantías — Lumina Robotics\nGarantía estándar por modelo:\n- LR-100: 24 meses.\nGarantía extendida no disponible.\n- LR-200: 36 meses.\nGarantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso.\n\n[05_acta_reunion_q3_2024:2] Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n5.\nSe establece una línea de soporte preferente para incidencias del LR-200, dada su criticidad para el negocio.\n\n[10_comparativa_competencia:1]   Punto débil: app limitada, no soporta gestión multi-planta.\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.\n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+      "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:0], [10_comparativa_competencia:1].\n\nLa garantía extendida es opcional hasta 60 meses [06_garantias:0].\n\nEl costo de la ampliación es de +59 € [06_garantias:0].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 616,
+      "output_tokens": 679
+    }
+  ]
+}

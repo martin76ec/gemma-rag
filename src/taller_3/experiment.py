@@ -53,7 +53,16 @@ class Judge:
                                   response=result["response"], retrieved_contexts=result["retrieved_contexts"])
         scores = {}
         for metric in self.metrics:
-            score = float(await metric.single_turn_ascore(sample))
+            # The judge emits JSON as free text; it occasionally breaks escaping
+            # (e.g. an unescaped quote from the source text) and fails parsing,
+            # not scoring. Retry that formatting failure instead of losing the run.
+            for attempt in itertools.count(1):
+                try:
+                    score = float(await metric.single_turn_ascore(sample))
+                    break
+                except Exception:
+                    if attempt >= 5:
+                        raise
             if not math.isfinite(score) or not 0 <= score <= 1:
                 raise LabError(f"Métrica {metric.name} inválida: {score}")
             scores[metric.name] = score
