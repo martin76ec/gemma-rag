@@ -236,7 +236,8 @@ comparación de las ocho preguntas de clase**, ni permite recomendar un sistema.
 La versión final obtuvo métricas finitas para los seis sistemas. El log central
 conserva también el error de inicialización RAGAS detectado y corregido durante
 el desarrollo. El experimento completo con las ocho preguntas representativas
-todavía no se ha ejecutado; los resultados disponibles corresponden a la prueba
+está en ejecución (`outputs/a118e92f6546/`, reanudable por registro); hasta que
+termine, los resultados agregados disponibles corresponden a la prueba
 de integración.
 
 Se corrigió el fallo `Object of type datetime is not JSON serializable` al
@@ -244,6 +245,39 @@ serializar la respuesta de Ollama con `model_dump(mode="json")` antes de generar
 la firma y guardar el manifiesto. La verificación con metadata real y la pregunta
 `q1`, incluida su evaluación RAGAS, está en `outputs/runtime-check/`; no equivale
 a una ejecución de la grilla completa.
+
+## Grabaciones
+
+Tres grabaciones de terminal documentan el laboratorio funcionando de verdad,
+sin datos inventados. Cada una existe como `.cast` (asciinema, fuente exacta,
+reproducible con scrollback real) y como `.gif` exportado para verse aquí mismo,
+ambas en `recordings/`.
+
+**Grilla del experimento en curso** — cambio real de configuración y conteo de
+registros evaluados (`grid_progress.cast` / `.gif`):
+
+![Progreso de la grilla](recordings/grid_progress.gif)
+
+**Consulta real con MRKL con IRCoT** — ejecución completa de
+`uv run python -m taller_3 ask "¿Qué hago si persiste el error E07?" --system "MRKL con IRCoT"`,
+con las esperas de inferencia comprimidas (`--idle-time-limit`) para no alargar
+la reproducción (`ask_mrkl_ircot.cast` / `.gif`):
+
+![Consulta MRKL con IRCoT](recordings/ask_mrkl_ircot.gif)
+
+**Recorrido por figuras guardadas** en `outputs/plots/smoke/` y
+`outputs/plots/embedding-trial/` (`plots_tour.cast`, renderizado en línea con
+el protocolo de Kitty; el `.gif` se generó directamente de los PNG para no
+depender de un terminal compatible):
+
+![Recorrido de gráficos](recordings/plots_tour.gif)
+
+Para reproducir los `.cast` originales:
+
+```bash
+uv tool install asciinema  # si no está instalado
+asciinema play recordings/<archivo>.cast
+```
 
 ## Fuentes
 

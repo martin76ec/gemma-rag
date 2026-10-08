@@ -1,0 +1,67 @@
+{
+  "key": "grid-3-k2",
+  "system": "RAG simple",
+  "id": "q8",
+  "type": "comparativa",
+  "question": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+  "reference": "El LR-200 cuesta 599 €, ofrece 180 minutos de autonomía y 36 meses de garantía. CleanX Pro cuesta 549 €, ofrece 150 minutos y 24 meses de garantía; no incluye fregado, mientras que el LR-200 sí. RoboNeat 5 cuesta 699 €, ofrece 200 minutos y 24 meses de garantía; no soporta gestión multi-planta, mientras que el LR-200 permite hasta cuatro plantas.",
+  "sources": [
+    "10_comparativa_competencia.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "No hay evidencia en los documentos proporcionados sobre el modelo LR-200. Por lo tanto, no es posible responder cómo se posiciona en precio, autonomía, garantía, ni qué ventajas ofrece frente a CleanX Pro o RoboNeat 5.",
+  "retrieved_contexts": [
+    "Competidor A — modelo CleanX Pro",
+    "Competidor B — modelo RoboNeat 5"
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Competidor A — modelo CleanX Pro",
+      "score": 0.6150489449501038
+    },
+    {
+      "id": "10_comparativa_competencia:8",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Competidor B — modelo RoboNeat 5",
+      "score": 0.5377839803695679
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Competidor A — modelo CleanX Pro",
+          "score": 0.6150489449501038
+        },
+        {
+          "id": "10_comparativa_competencia:8",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Competidor B — modelo RoboNeat 5",
+          "score": 0.5377839803695679
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 189,
+  "output_tokens": 503,
+  "seconds": 6.884390015000463,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?\nDocumentos:\n[10_comparativa_competencia:2] Competidor A — modelo CleanX Pro\n\n[10_comparativa_competencia:8] Competidor B — modelo RoboNeat 5",
+      "response": "No hay evidencia en los documentos proporcionados sobre el modelo LR-200. Por lo tanto, no es posible responder cómo se posiciona en precio, autonomía, garantía, ni qué ventajas ofrece frente a CleanX Pro o RoboNeat 5.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 189,
+      "output_tokens": 503
+    }
+  ],
+  "answer_correctness": 0.3642050672194785,
+  "faithfulness": 1.0
+}

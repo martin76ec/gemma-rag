@@ -62,5 +62,7 @@
       "input_tokens": 210,
       "output_tokens": 708
     }
-  ]
+  ],
+  "answer_correctness": 0.4224142150384066,
+  "faithfulness": 0.8333333333333334
 }

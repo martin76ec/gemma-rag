@@ -1,0 +1,93 @@
+{
+  "key": "grid-3-k4",
+  "system": "RAG simple",
+  "id": "q7",
+  "type": "comparativa",
+  "question": "¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?",
+  "reference": "El LR-100 tiene unos 90 minutos de autonomía, emite 68 dB, no tiene función de fregado y se desplaza de forma aleatoria sin mapear la vivienda. El LR-200 tiene unos 180 minutos de autonomía, emite 58 dB, incluye fregado con dosificación automática y utiliza SLAM con LiDAR y cámara, permitiendo guardar hasta cuatro plantas.",
+  "sources": [
+    "01_producto_lr100_specs.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "No hay evidencia disponible que compare el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado o capacidad de mapeo.\n\nLos documentos solo proporcionan:\n*   Información general sobre el LR-200 [02_producto_lr200_specs:0].\n*   Identificadores de modelos [09_incidencias_conocidas:7] y [09_incidencias_conocidas:2].\n*   Que el LR-200 es el modelo de referencia de la marca [05_acta_reunion_q3_2024:11].",
+  "retrieved_contexts": [
+    "LR-200:",
+    "LR-100:",
+    "Especificaciones técnicas — Lumina LR-200",
+    "El LR-200 pasa a ser el modelo de referencia de la marca."
+  ],
+  "documents": [
+    {
+      "id": "09_incidencias_conocidas:7",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "LR-200:",
+      "score": 0.6921265125274658
+    },
+    {
+      "id": "09_incidencias_conocidas:2",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "LR-100:",
+      "score": 0.6683253049850464
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200",
+      "score": 0.6448678970336914
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:11",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "El LR-200 pasa a ser el modelo de referencia de la marca.",
+      "score": 0.6405466794967651
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?",
+      "documents": [
+        {
+          "id": "09_incidencias_conocidas:7",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "LR-200:",
+          "score": 0.6921265125274658
+        },
+        {
+          "id": "09_incidencias_conocidas:2",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "LR-100:",
+          "score": 0.6683253049850464
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200",
+          "score": 0.6448678970336914
+        },
+        {
+          "id": "05_acta_reunion_q3_2024:11",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "El LR-200 pasa a ser el modelo de referencia de la marca.",
+          "score": 0.6405466794967651
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 226,
+  "output_tokens": 775,
+  "seconds": 10.984460753001258,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?\nDocumentos:\n[09_incidencias_conocidas:7] LR-200:\n\n[09_incidencias_conocidas:2] LR-100:\n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\n\n[05_acta_reunion_q3_2024:11] El LR-200 pasa a ser el modelo de referencia de la marca.",
+      "response": "No hay evidencia disponible que compare el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado o capacidad de mapeo.\n\nLos documentos solo proporcionan:\n*   Información general sobre el LR-200 [02_producto_lr200_specs:0].\n*   Identificadores de modelos [09_incidencias_conocidas:7] y [09_incidencias_conocidas:2].\n*   Que el LR-200 es el modelo de referencia de la marca [05_acta_reunion_q3_2024:11].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 226,
+      "output_tokens": 775
+    }
+  ],
+  "answer_correctness": 0.49746143608356275,
+  "faithfulness": 0.25
+}

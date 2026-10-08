@@ -5,3 +5,7 @@ grid-1-k2,1,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/
 grid-1-k4,1,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,semantic,4,0.42740759590037286,0.7023809523809523
 grid-2-k2,2,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,character,2,0.568252185919141,0.9266025641025641
 grid-2-k4,2,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,character,4,0.6451125888833775,0.952922077922078
+grid-3-k2,3,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,semantic,2,0.3901944941956881,0.8541666666666666
+grid-3-k4,3,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,semantic,4,0.47951079943706865,0.8229166666666666
+grid-4-k2,4,intfloat/multilingual-e5-small,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,character,2,0.6551898707100144,0.9232954545454546
+grid-4-k4,4,intfloat/multilingual-e5-small,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,character,4,0.6688061760246894,0.8928571428571429

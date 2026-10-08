@@ -1,0 +1,92 @@
+{
+  "key": "grid-3-k4",
+  "system": "RAG simple",
+  "id": "q1",
+  "type": "factual",
+  "question": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+  "reference": "El LR-200 tiene una batería de 5200 mAh, una autonomía aproximada de 180 minutos y un tiempo de carga de 2,5 horas.",
+  "sources": [
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "*   **Capacidad de batería:** 5200 mAh [02_producto_lr200_specs:5].\n*   **Autonomía aproximada:** 180 minutos [02_producto_lr200_specs:5].\n*   **Tiempo de carga:** No hay evidencia disponible.",
+  "retrieved_contexts": [
+    "Especificaciones técnicas — Lumina LR-200",
+    "Especificaciones técnicas — Lumina LR-100",
+    "Batería: 2400 mAh, autonomía aproximada de 90 minutos",
+    "Batería: 5200 mAh, autonomía aproximada de 180 minutos"
+  ],
+  "documents": [
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200",
+      "score": 0.6726197004318237
+    },
+    {
+      "id": "01_producto_lr100_specs:0",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-100",
+      "score": 0.6346902847290039
+    },
+    {
+      "id": "01_producto_lr100_specs:5",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Batería: 2400 mAh, autonomía aproximada de 90 minutos",
+      "score": 0.6271200180053711
+    },
+    {
+      "id": "02_producto_lr200_specs:5",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Batería: 5200 mAh, autonomía aproximada de 180 minutos",
+      "score": 0.6071768403053284
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+      "documents": [
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200",
+          "score": 0.6726197004318237
+        },
+        {
+          "id": "01_producto_lr100_specs:0",
+          "source": "01_producto_lr100_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-100",
+          "score": 0.6346902847290039
+        },
+        {
+          "id": "01_producto_lr100_specs:5",
+          "source": "01_producto_lr100_specs.txt",
+          "text": "Batería: 2400 mAh, autonomía aproximada de 90 minutos",
+          "score": 0.6271200180053711
+        },
+        {
+          "id": "02_producto_lr200_specs:5",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Batería: 5200 mAh, autonomía aproximada de 180 minutos",
+          "score": 0.6071768403053284
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 233,
+  "output_tokens": 548,
+  "seconds": 7.494775823000964,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?\nDocumentos:\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\n\n[01_producto_lr100_specs:0] Especificaciones técnicas — Lumina LR-100\n\n[01_producto_lr100_specs:5] Batería: 2400 mAh, autonomía aproximada de 90 minutos\n\n[02_producto_lr200_specs:5] Batería: 5200 mAh, autonomía aproximada de 180 minutos",
+      "response": "*   **Capacidad de batería:** 5200 mAh [02_producto_lr200_specs:5].\n*   **Autonomía aproximada:** 180 minutos [02_producto_lr200_specs:5].\n*   **Tiempo de carga:** No hay evidencia disponible.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 233,
+      "output_tokens": 548
+    }
+  ],
+  "answer_correctness": 0.682333159188174,
+  "faithfulness": 1.0
+}
