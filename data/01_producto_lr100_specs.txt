@@ -1,0 +1,18 @@
+Especificaciones técnicas — Lumina LR-100
+Fecha de lanzamiento: marzo de 2022
+Estado: en catálogo (pendiente de discontinuación)
+
+Dimensiones: 32 × 32 × 9 cm
+Peso: 3.1 kg
+Batería: 2400 mAh, autonomía aproximada de 90 minutos
+Tiempo de carga: 4 horas
+Capacidad del depósito: 450 ml
+Función de fregado: no disponible
+Nivel de ruido: 68 dB
+Conectividad: Wi-Fi 2.4 GHz
+Sensores: bumper físico y sensor de caída
+Mapeo: aleatorio (no realiza mapeo de la vivienda)
+App compatible: Lumina Home v1.x
+Precio de salida: 249 €
+
+Notas internas: el firmware 1.4 sigue siendo la última versión publicada. No se prevén nuevas actualizaciones.

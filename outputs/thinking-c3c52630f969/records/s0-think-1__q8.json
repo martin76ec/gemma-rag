@@ -1,0 +1,93 @@
+{
+  "key": "s0-think-1",
+  "system": "RAG simple",
+  "id": "q8",
+  "type": "comparativa",
+  "question": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+  "reference": "El LR-200 cuesta 599 €, ofrece 180 minutos de autonomía y 36 meses de garantía. CleanX Pro cuesta 549 €, ofrece 150 minutos y 24 meses de garantía; no incluye fregado, mientras que el LR-200 sí. RoboNeat 5 cuesta 699 €, ofrece 200 minutos y 24 meses de garantía; no soporta gestión multi-planta, mientras que el LR-200 permite hasta cuatro plantas.",
+  "sources": [
+    "10_comparativa_competencia.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "**Comparativa de LR-200 vs. Competidores**\n\n| Característica | LR-200 | CleanX Pro | RoboNeat 5 |\n| :--- | :--- | :--- | :--- |\n| **Precio** | 599 € [10_comparativa_competencia:2] | 549 € [10_comparativa_competencia:0] | 699 € [10_comparativa_competencia:0] |\n| **Autonomía** | 180 minutos [10_comparativa_competencia:2] | 150 minutos [10_comparativa_competencia:0] | 200 minutos [10_comparativa_competencia:0] |\n| **Garantía** | 36 meses [10_comparativa_competencia:2] | 24 meses [10_comparativa_competencia:0] | 24 meses [10_comparativa_competencia:0] |\n\n**Ventajas del LR-200:**\n\n*   **Frente a CleanX Pro (Fregado):** El LR-200 cuenta con función de fregado [02_producto_lr200_specs:0], una función que el CleanX Pro no incluye [10_comparativa_competencia:0].\n*   **Frente a RoboNeat 5 (Gestión de plantas):** El LR-200 soporta multi-planta hasta 4 niveles [10_comparativa_competencia:2].",
+  "retrieved_contexts": [
+    "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+    "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con cámara\n  Garantía: 24 meses\n  Precio: 699 €\n  Punto débil: app limitada, no soporta ",
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+    "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por "
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "score": 0.5780102014541626
+    },
+    {
+      "id": "10_comparativa_competencia:0",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con cámara\n  Garantía: 24 meses\n  Precio: 699 €\n  Punto débil: app limitada, no soporta ",
+      "score": 0.5559502840042114
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+      "score": 0.44735944271087646
+    },
+    {
+      "id": "06_garantias:0",
+      "source": "06_garantias.txt",
+      "text": "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+      "score": 0.4373602569103241
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+          "score": 0.5780102014541626
+        },
+        {
+          "id": "10_comparativa_competencia:0",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con cámara\n  Garantía: 24 meses\n  Precio: 699 €\n  Punto débil: app limitada, no soporta ",
+          "score": 0.5559502840042114
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+          "score": 0.44735944271087646
+        },
+        {
+          "id": "06_garantias:0",
+          "source": "06_garantias.txt",
+          "text": "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+          "score": 0.4373602569103241
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 754,
+  "output_tokens": 1308,
+  "seconds": 18.71874026599835,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?\nDocumentos:\n[10_comparativa_competencia:2] i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor \n\n[10_comparativa_competencia:0] Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con cámara\n  Garantía: 24 meses\n  Precio: 699 €\n  Punto débil: app limitada, no soporta \n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth \n\n[06_garantias:0] Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+      "response": "**Comparativa de LR-200 vs. Competidores**\n\n| Característica | LR-200 | CleanX Pro | RoboNeat 5 |\n| :--- | :--- | :--- | :--- |\n| **Precio** | 599 € [10_comparativa_competencia:2] | 549 € [10_comparativa_competencia:0] | 699 € [10_comparativa_competencia:0] |\n| **Autonomía** | 180 minutos [10_comparativa_competencia:2] | 150 minutos [10_comparativa_competencia:0] | 200 minutos [10_comparativa_competencia:0] |\n| **Garantía** | 36 meses [10_comparativa_competencia:2] | 24 meses [10_comparativa_competencia:0] | 24 meses [10_comparativa_competencia:0] |\n\n**Ventajas del LR-200:**\n\n*   **Frente a CleanX Pro (Fregado):** El LR-200 cuenta con función de fregado [02_producto_lr200_specs:0], una función que el CleanX Pro no incluye [10_comparativa_competencia:0].\n*   **Frente a RoboNeat 5 (Gestión de plantas):** El LR-200 soporta multi-planta hasta 4 niveles [10_comparativa_competencia:2].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 754,
+      "output_tokens": 1308
+    }
+  ],
+  "answer_correctness": 0.8131222216694007,
+  "faithfulness": 1.0
+}

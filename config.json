@@ -1,0 +1,29 @@
+{
+  "model": "gemma4:e4b",
+  "judge_model": "gemma4:e4b",
+  "ollama_url": "http://127.0.0.1:11434",
+  "temperature": 0,
+  "think": true,
+  "num_predict": 4096,
+  "seed": 42,
+  "embeddings": ["sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", "intfloat/multilingual-e5-small", "lightonai/mDenseOn", "BAAI/bge-m3"],
+  "tokenizers": ["mrm8488/TinyBERT-spanish-uncased-finetuned-ner", "dccuchile/bert-base-spanish-wwm-cased"],
+  "hf_revisions": {
+    "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+    "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+    "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+  },
+  "chunkers": ["character", "semantic"],
+  "top_k": [2, 4],
+  "chunk_chars": 480,
+  "chunk_tokens": 96,
+  "semantic_threshold": 0.65,
+  "max_sentences": 4,
+  "max_fragments": 8,
+  "max_subquestions": 3,
+  "questions_path": "questions.json",
+  "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+}

@@ -1,0 +1,66 @@
+{
+  "key": "grid-1-k2",
+  "system": "RAG simple",
+  "id": "q1",
+  "type": "factual",
+  "question": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+  "reference": "El LR-200 tiene una batería de 5200 mAh, una autonomía aproximada de 180 minutos y un tiempo de carga de 2,5 horas.",
+  "sources": [
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "La información sobre la capacidad de batería, autonomía aproximada y tiempo de carga del Lumina LR-200 no está disponible en los documentos proporcionados.",
+  "retrieved_contexts": [
+    "Especificaciones técnicas — Lumina LR-200",
+    "Especificaciones técnicas — Lumina LR-100"
+  ],
+  "documents": [
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200",
+      "score": 0.6726197004318237
+    },
+    {
+      "id": "01_producto_lr100_specs:0",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-100",
+      "score": 0.6346902847290039
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+      "documents": [
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200",
+          "score": 0.6726197004318237
+        },
+        {
+          "id": "01_producto_lr100_specs:0",
+          "source": "01_producto_lr100_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-100",
+          "score": 0.6346902847290039
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 162,
+  "output_tokens": 645,
+  "seconds": 9.510438956998769,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?\nDocumentos:\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\n\n[01_producto_lr100_specs:0] Especificaciones técnicas — Lumina LR-100",
+      "response": "La información sobre la capacidad de batería, autonomía aproximada y tiempo de carga del Lumina LR-200 no está disponible en los documentos proporcionados.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 162,
+      "output_tokens": 645
+    }
+  ],
+  "answer_correctness": 0.4625921534117748,
+  "faithfulness": 0.0
+}

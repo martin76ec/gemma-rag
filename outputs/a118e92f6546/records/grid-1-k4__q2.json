@@ -1,0 +1,92 @@
+{
+  "key": "grid-1-k4",
+  "system": "RAG simple",
+  "id": "q2",
+  "type": "factual",
+  "question": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+  "reference": "La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.",
+  "sources": [
+    "06_garantias.txt"
+  ],
+  "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:4].\n\n*   **Ampliación:** No hay evidencia sobre hasta cuántos meses se puede ampliar la garantía del LR-200.\n*   **Costo de la ampliación:** No hay evidencia sobre el costo de la ampliación.",
+  "retrieved_contexts": [
+    "- LR-200: 36 meses.",
+    "- LR-100: 24 meses.",
+    "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.",
+    "LR-200:"
+  ],
+  "documents": [
+    {
+      "id": "06_garantias:4",
+      "source": "06_garantias.txt",
+      "text": "- LR-200: 36 meses.",
+      "score": 0.7757885456085205
+    },
+    {
+      "id": "06_garantias:2",
+      "source": "06_garantias.txt",
+      "text": "- LR-100: 24 meses.",
+      "score": 0.7239346504211426
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:14",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.",
+      "score": 0.6711130142211914
+    },
+    {
+      "id": "09_incidencias_conocidas:7",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "LR-200:",
+      "score": 0.6523043513298035
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+      "documents": [
+        {
+          "id": "06_garantias:4",
+          "source": "06_garantias.txt",
+          "text": "- LR-200: 36 meses.",
+          "score": 0.7757885456085205
+        },
+        {
+          "id": "06_garantias:2",
+          "source": "06_garantias.txt",
+          "text": "- LR-100: 24 meses.",
+          "score": 0.7239346504211426
+        },
+        {
+          "id": "05_acta_reunion_q3_2024:14",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.",
+          "score": 0.6711130142211914
+        },
+        {
+          "id": "09_incidencias_conocidas:7",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "LR-200:",
+          "score": 0.6523043513298035
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 237,
+  "output_tokens": 557,
+  "seconds": 7.748220261000824,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?\nDocumentos:\n[06_garantias:4] - LR-200: 36 meses.\n\n[06_garantias:2] - LR-100: 24 meses.\n\n[05_acta_reunion_q3_2024:14] Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n[09_incidencias_conocidas:7] LR-200:",
+      "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:4].\n\n*   **Ampliación:** No hay evidencia sobre hasta cuántos meses se puede ampliar la garantía del LR-200.\n*   **Costo de la ampliación:** No hay evidencia sobre el costo de la ampliación.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 237,
+      "output_tokens": 557
+    }
+  ],
+  "answer_correctness": 0.5817043907929703,
+  "faithfulness": 1.0
+}

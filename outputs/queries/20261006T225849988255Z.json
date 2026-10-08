@@ -1,0 +1,122 @@
+{
+  "question": "¿Cuál es la autonomía del LR-200?",
+  "system": "MRKL",
+  "selection": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "top_k": 2
+  },
+  "config": {
+    "model": "gemma4:e4b",
+    "judge_model": "gemma4:e4b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "temperature": 0,
+    "think": true,
+    "num_predict": 4096,
+    "seed": 42,
+    "embeddings": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "intfloat/multilingual-e5-small",
+      "lightonai/mDenseOn",
+      "BAAI/bge-m3"
+    ],
+    "tokenizers": [
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+      "dccuchile/bert-base-spanish-wwm-cased"
+    ],
+    "hf_revisions": {
+      "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+      "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+      "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+    },
+    "chunkers": [
+      "character",
+      "semantic"
+    ],
+    "top_k": [
+      2,
+      4
+    ],
+    "chunk_chars": 480,
+    "chunk_tokens": 96,
+    "semantic_threshold": 0.65,
+    "max_sentences": 4,
+    "max_fragments": 8,
+    "max_subquestions": 3,
+    "questions_path": "questions.json",
+    "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+  },
+  "evaluated_with_ragas": false,
+  "response": "La autonomía aproximada del LR-200 es de 180 minutos [02_producto_lr200_specs:0].",
+  "retrieved_contexts": [
+    "Manual de usuario — Lumina LR-200 (resumen)\n\nPrimera configuración:\n1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.\n2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.\n3. Descargue la aplicación Lumina Home (versión 3.x o superior).\n4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en ",
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth "
+  ],
+  "documents": [
+    {
+      "id": "08_manual_uso_lr200:0",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "Manual de usuario — Lumina LR-200 (resumen)\n\nPrimera configuración:\n1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.\n2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.\n3. Descargue la aplicación Lumina Home (versión 3.x o superior).\n4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en ",
+      "score": 0.5425716638565063
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+      "score": 0.4474675953388214
+    }
+  ],
+  "trace": [
+    {
+      "stage": "route",
+      "sources": [
+        "02_producto_lr200_specs.txt",
+        "08_manual_uso_lr200.txt"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la autonomía del LR-200?",
+      "documents": [
+        {
+          "id": "08_manual_uso_lr200:0",
+          "source": "08_manual_uso_lr200.txt",
+          "text": "Manual de usuario — Lumina LR-200 (resumen)\n\nPrimera configuración:\n1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.\n2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.\n3. Descargue la aplicación Lumina Home (versión 3.x o superior).\n4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en ",
+          "score": 0.5425716638565063
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+          "score": 0.4474675953388214
+        }
+      ]
+    }
+  ],
+  "llm_calls": 2,
+  "input_tokens": 599,
+  "output_tokens": 1175,
+  "seconds": 17.405617414005974,
+  "calls": [
+    {
+      "prompt": "Selecciona los archivos necesarios para contestar la pregunta. Devuelve sus nombres exactos. Incluye todos los necesarios para razonamiento multihop.\nPregunta: ¿Cuál es la autonomía del LR-200?\nArchivos: ['01_producto_lr100_specs.txt', '02_producto_lr200_specs.txt', '03_politica_devoluciones_2023.txt', '04_politica_devoluciones_2024.txt', '05_acta_reunion_q3_2024.txt', '06_garantias.txt', '07_soporte_contactos.txt', '08_manual_uso_lr200.txt', '09_incidencias_conocidas.txt', '10_comparativa_competencia.txt']",
+      "response": "{\n    \"sources\": [\n        \"02_producto_lr200_specs.txt\",\n        \"08_manual_uso_lr200.txt\"\n    ]\n}",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 214,
+      "output_tokens": 714
+    },
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la autonomía del LR-200?\nDocumentos:\n[08_manual_uso_lr200:0] Manual de usuario — Lumina LR-200 (resumen)\n\nPrimera configuración:\n1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.\n2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.\n3. Descargue la aplicación Lumina Home (versión 3.x o superior).\n4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en \n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+      "response": "La autonomía aproximada del LR-200 es de 180 minutos [02_producto_lr200_specs:0].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 385,
+      "output_tokens": 461
+    }
+  ]
+}

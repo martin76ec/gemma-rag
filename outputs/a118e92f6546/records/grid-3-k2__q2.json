@@ -1,0 +1,66 @@
+{
+  "key": "grid-3-k2",
+  "system": "RAG simple",
+  "id": "q2",
+  "type": "factual",
+  "question": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+  "reference": "La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.",
+  "sources": [
+    "06_garantias.txt"
+  ],
+  "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:4].\n\nNo hay información disponible sobre hasta cuántos meses puede ampliarse la garantía ni sobre el costo de dicha ampliación.",
+  "retrieved_contexts": [
+    "- LR-200: 36 meses.",
+    "- LR-100: 24 meses."
+  ],
+  "documents": [
+    {
+      "id": "06_garantias:4",
+      "source": "06_garantias.txt",
+      "text": "- LR-200: 36 meses.",
+      "score": 0.7757885456085205
+    },
+    {
+      "id": "06_garantias:2",
+      "source": "06_garantias.txt",
+      "text": "- LR-100: 24 meses.",
+      "score": 0.7239346504211426
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+      "documents": [
+        {
+          "id": "06_garantias:4",
+          "source": "06_garantias.txt",
+          "text": "- LR-200: 36 meses.",
+          "score": 0.7757885456085205
+        },
+        {
+          "id": "06_garantias:2",
+          "source": "06_garantias.txt",
+          "text": "- LR-100: 24 meses.",
+          "score": 0.7239346504211426
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 159,
+  "output_tokens": 406,
+  "seconds": 5.618630600998586,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?\nDocumentos:\n[06_garantias:4] - LR-200: 36 meses.\n\n[06_garantias:2] - LR-100: 24 meses.",
+      "response": "La garantía estándar del LR-200 es de 36 meses [06_garantias:4].\n\nNo hay información disponible sobre hasta cuántos meses puede ampliarse la garantía ni sobre el costo de dicha ampliación.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 159,
+      "output_tokens": 406
+    }
+  ],
+  "answer_correctness": 0.5973828563029284,
+  "faithfulness": 1.0
+}

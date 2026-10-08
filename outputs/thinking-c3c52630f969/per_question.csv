@@ -1,0 +1,98 @@
+key,system,id,type,question,reference,sources,response,llm_calls,input_tokens,output_tokens,seconds,answer_correctness,faithfulness,think,variant
+s0-think-0,RAG simple,q1,factual,"¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?","El LR-200 tiene una batería de 5200 mAh, una autonomía aproximada de 180 minutos y un tiempo de carga de 2,5 horas.",['02_producto_lr200_specs.txt'],"La capacidad de batería es de 5200 mAh, la autonomía aproximada es de 180 minutos y el tiempo de carga es de 2.5 horas [02_producto_lr200_specs:0].",1,689,52,0.9515467949968297,0.9723282753939484,1.0,False,RAG simple · sin thinking
+s0-think-1,RAG simple,q1,factual,"¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?","El LR-200 tiene una batería de 5200 mAh, una autonomía aproximada de 180 minutos y un tiempo de carga de 2,5 horas.",['02_producto_lr200_specs.txt'],"La capacidad de batería es de 5200 mAh [02_producto_lr200_specs:0].
+La autonomía aproximada es de 180 minutos [02_producto_lr200_specs:0] y [10_comparativa_competencia:2].
+El tiempo de carga es de 2.5 horas [02_producto_lr200_specs:0].",1,696,761,11.100524340006814,0.952558349576879,1.0,True,RAG simple · con thinking
+s0-think-1,RAG simple,q2,factual,¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?,La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.,['06_garantias.txt'],"La garantía estándar del LR-200 es de 36 meses [06_garantias:0] y [10_comparativa_competencia:2].
+
+La garantía extendida es opcional hasta 60 meses [06_garantias:0].
+
+El costo de la ampliación es de +59 € [06_garantias:0].",1,642,727,10.555883642999106,0.9739559966650667,1.0,True,RAG simple · con thinking
+s0-think-0,RAG simple,q2,factual,¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?,La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.,['06_garantias.txt'],"La garantía estándar del LR-200 es de 36 meses [06_garantias:0], [10_comparativa_competencia:2]. Puede ampliarse hasta 60 meses [06_garantias:0]. El costo de la ampliación es de +59 € [06_garantias:0].",1,635,78,1.3420426140000927,0.789552659677007,1.0,False,RAG simple · sin thinking
+s0-think-0,RAG simple,q3,temporal,"Según las políticas del corpus, ¿cómo cambió el plazo de devolución desde el 1 de abril de 2024? Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, ¿qué cargo y condiciones de envío se aplican si se devuelve 45 días después de recibirlo?","Hasta el 31 de marzo de 2024 el plazo era de 30 días naturales; desde el 1 de abril de 2024 es de 60 días naturales. La devolución del LR-200 abierto y en buen estado en el día 45 está dentro del nuevo plazo y tiene un cargo del 10 % del precio de compra, es decir, 59,90 €. El envío de devolución es gratuito porque el pedido supera los 200 €.","['03_politica_devoluciones_2023.txt', '04_politica_devoluciones_2024.txt']","El plazo de devolución cambió de 30 días naturales desde la recepción del producto (vigente hasta el 31 de marzo de 2024) a 60 días naturales desde la recepción del producto (vigente desde el 1 de abril de 2024) [03_politica_devoluciones_2023:0, 04_politica_devoluciones_2024:0].
+
+Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, devuelto 45 días después de recibirlo:
+*   **Cargo:** Cargo del 10% sobre el precio de compra [04_politica_devoluciones_2024:0].
+*   **Condiciones de envío:** No se especifica el cargo de envío de la devolución para este caso específico. Solo se indica que los gastos de envío de la devolución son gratuitos en pedidos superiores a 200 € [04_politica_devoluciones_2024:2].",1,683,234,3.6006134369963547,0.714204608567891,0.8333333333333334,False,RAG simple · sin thinking
+s0-think-1,RAG simple,q3,temporal,"Según las políticas del corpus, ¿cómo cambió el plazo de devolución desde el 1 de abril de 2024? Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, ¿qué cargo y condiciones de envío se aplican si se devuelve 45 días después de recibirlo?","Hasta el 31 de marzo de 2024 el plazo era de 30 días naturales; desde el 1 de abril de 2024 es de 60 días naturales. La devolución del LR-200 abierto y en buen estado en el día 45 está dentro del nuevo plazo y tiene un cargo del 10 % del precio de compra, es decir, 59,90 €. El envío de devolución es gratuito porque el pedido supera los 200 €.","['03_politica_devoluciones_2023.txt', '04_politica_devoluciones_2024.txt']","El plazo de devolución cambió de 30 días naturales (política histórica, vigente hasta el 31 de marzo de 2024) [03_politica_devoluciones_2023:0] a 60 días naturales (política vigente desde el 1 de abril de 2024) [04_politica_devoluciones_2024:0].
+
+Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, devuelto 45 días después de recibirlo:
+
+*   **Cargo:** Se aplica un cargo del 10% sobre el precio de compra [04_politica_devoluciones_2024:0].
+*   **Condiciones de envío:** Los gastos de envío de la devolución son gratuitos en pedidos superiores a 200 € [04_politica_devoluciones_2024:2].",1,690,931,13.388243991001218,0.6464477184539121,1.0,True,RAG simple · con thinking
+s0-think-1,RAG simple,q4,temporal,"Según el corpus, ¿qué fallo del LR-200 relacionado con los cortes de luz se resolvió mediante una actualización, qué versión lo corrige y cuándo se publicó?","El bug F-301 provocaba que el mapa SLAM del LR-200 se reiniciara espontáneamente tras un corte de luz. Se resolvió en el firmware 2.1, publicado en noviembre de 2024; se recomienda actualizar a esa versión.","['09_incidencias_conocidas.txt', '02_producto_lr200_specs.txt']","No hay evidencia en los documentos sobre un fallo del LR-200 relacionado con cortes de luz que haya sido resuelto mediante una actualización, ni se proporciona la versión o la fecha de publicación.",1,556,569,8.648206387006212,0.13577476295502897,0.75,True,RAG simple · con thinking
+s0-think-0,RAG simple,q4,temporal,"Según el corpus, ¿qué fallo del LR-200 relacionado con los cortes de luz se resolvió mediante una actualización, qué versión lo corrige y cuándo se publicó?","El bug F-301 provocaba que el mapa SLAM del LR-200 se reiniciara espontáneamente tras un corte de luz. Se resolvió en el firmware 2.1, publicado en noviembre de 2024; se recomienda actualizar a esa versión.","['09_incidencias_conocidas.txt', '02_producto_lr200_specs.txt']","No hay información en los documentos sobre un fallo del LR-200 relacionado con los cortes de luz que se haya resuelto mediante una actualización, ni se menciona ninguna versión o fecha de publicación para dicha corrección.",1,549,45,0.8048087619972648,0.14189950049047084,1.0,False,RAG simple · sin thinking
+s0-think-0,RAG simple,q5,multihop,"¿Quién recomendó discontinuar el LR-100 en la reunión de septiembre de 2024, qué incidencia sin solución respalda esa decisión y qué se acordó sobre su producción y las existencias?","Javier Soto, el CTO, recomendó discontinuar el LR-100 por los fallos recurrentes de firmware sin solución prevista. El bug F-203 hace que el robot entre en bucle al detectar alfombras oscuras con firmware 1.4 o anterior y no tiene solución prevista. Se acordó mantener el stock hasta agotar existencias, sin nueva producción a partir del 1 de noviembre de 2024.","['05_acta_reunion_q3_2024.txt', '09_incidencias_conocidas.txt']","Javier Soto (CTO) recomendó discontinuar el modelo LR-100 [05_acta_reunion_q3_2024:0]. La incidencia sin solución que respalda esta decisión son los fallos recurrentes de firmware [05_acta_reunion_q3_2024:0], específicamente el Bug F-203, donde el robot puede entrar en bucle al detectar alfombras de tonos oscuros, y no hay solución prevista [09_incidencias_conocidas:0].
+
+Se acordó mantener el stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024 [05_acta_reunion_q3_2024:2].",1,672,177,2.7763727019992075,0.9075786196967992,1.0,False,RAG simple · sin thinking
+s0-think-1,RAG simple,q5,multihop,"¿Quién recomendó discontinuar el LR-100 en la reunión de septiembre de 2024, qué incidencia sin solución respalda esa decisión y qué se acordó sobre su producción y las existencias?","Javier Soto, el CTO, recomendó discontinuar el LR-100 por los fallos recurrentes de firmware sin solución prevista. El bug F-203 hace que el robot entre en bucle al detectar alfombras oscuras con firmware 1.4 o anterior y no tiene solución prevista. Se acordó mantener el stock hasta agotar existencias, sin nueva producción a partir del 1 de noviembre de 2024.","['05_acta_reunion_q3_2024.txt', '09_incidencias_conocidas.txt']","El CTO recomendó discontinuar el modelo LR-100 [05_acta_reunion_q3_2024:0].
+
+La decisión se respalda en los fallos recurrentes de firmware sin solución prevista [05_acta_reunion_q3_2024:0]. Un ejemplo de esta incidencia es el Bug F-203, que permite que el robot entre en bucle al detectar alfombras de tonos oscuros, sin que exista solución prevista [09_incidencias_conocidas:0].
+
+Se acordó mantener el stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024 [05_acta_reunion_q3_2024:2].",1,679,1086,16.223734822997358,0.6770740258939072,1.0,True,RAG simple · con thinking
+s0-think-1,RAG simple,q6,multihop,"El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?","El error E07 indica un fallo de comunicación con la base de carga. Hay que reiniciar el robot. Si persiste tras dos intentos, se considera un fallo de hardware. El canal de hardware es hardware@lumina-robotics.example o el teléfono +34 900 111 222, de lunes a viernes de 9:00 a 18:00.","['08_manual_uso_lr200.txt', '09_incidencias_conocidas.txt', '07_soporte_contactos.txt']","*   **Significado del error E07:** No hay evidencia disponible sobre el significado del error E07.
+*   **Qué intentar:** No hay evidencia disponible sobre la solución a intentar para el error E07.
+*   **Canal de soporte (si persiste):**
+    *   **Teléfono:** +34 900 333 444. Este canal es para incidencias críticas del LR-200 y está disponible de lunes a domingo, de 8:00 a 22:00 [07_soporte_contactos:2].
+    *   **Email:** Solo por email; el plazo medio de respuesta es de 48 horas [07_soporte_contactos:2].
+
+*Nota:* Los documentos no especifican un límite de ""dos intentos"" para contactar el soporte.",1,455,944,13.637344714996289,0.25394388469412765,0.6666666666666666,True,RAG simple · con thinking
+s0-think-0,RAG simple,q6,multihop,"El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?","El error E07 indica un fallo de comunicación con la base de carga. Hay que reiniciar el robot. Si persiste tras dos intentos, se considera un fallo de hardware. El canal de hardware es hardware@lumina-robotics.example o el teléfono +34 900 111 222, de lunes a viernes de 9:00 a 18:00.","['08_manual_uso_lr200.txt', '09_incidencias_conocidas.txt', '07_soporte_contactos.txt']","El documento proporcionado no especifica el significado del error E07, qué intentar para solucionarlo, ni los detalles de contacto de soporte de hardware para este error en particular.
+
+Solo se menciona que, si el problema persiste tras aplicar la solución indicada, se debe contactar con el canal de soporte adecuado según el tipo de incidencia [08_manual_uso_lr200:3].
+
+Para incidencias críticas del LR-200, se puede contactar por teléfono al +34 900 333 444, de lunes a domingo, de 8:00 a 22:00. Este canal es reservado para errores que impidan el uso del producto y para clientes con garantía extendida activa [07_soporte_contactos:2].
+
+Para otros casos, se puede contactar solo por email, con un plazo medio de respuesta de 48 horas [07_soporte_contactos:2].",1,448,207,3.09099595999578,0.27186928938457766,0.9,False,RAG simple · sin thinking
+s0-think-0,RAG simple,q7,comparativa,"¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?","El LR-100 tiene unos 90 minutos de autonomía, emite 68 dB, no tiene función de fregado y se desplaza de forma aleatoria sin mapear la vivienda. El LR-200 tiene unos 180 minutos de autonomía, emite 58 dB, incluye fregado con dosificación automática y utiliza SLAM con LiDAR y cámara, permitiendo guardar hasta cuatro plantas.","['01_producto_lr100_specs.txt', '02_producto_lr200_specs.txt']","**Autonomía:**
+*   LR-100: 90 minutos [01_producto_lr100_specs:0].
+*   LR-200: 180 minutos [02_producto_lr200_specs:0].
+
+**Nivel de ruido:**
+*   LR-100: 68 dB [01_producto_lr100_specs:0].
+*   LR-200: 58 dB [02_producto_lr200_specs:0].
+
+**Función de fregado:**
+*   LR-100: No disponible [01_producto_lr100_specs:0].
+*   LR-200: Sí, con dosificación automática [02_producto_lr200_specs:0].
+
+**Capacidad de mapeo:**
+*   LR-100: No se especifica la capacidad de mapeo [01_producto_lr100_specs:0].
+*   LR-200: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles [10_comparativa_competencia:2].",1,738,267,3.940024978997826,0.8190925338661952,0.875,False,RAG simple · sin thinking
+s0-think-1,RAG simple,q7,comparativa,"¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?","El LR-100 tiene unos 90 minutos de autonomía, emite 68 dB, no tiene función de fregado y se desplaza de forma aleatoria sin mapear la vivienda. El LR-200 tiene unos 180 minutos de autonomía, emite 58 dB, incluye fregado con dosificación automática y utiliza SLAM con LiDAR y cámara, permitiendo guardar hasta cuatro plantas.","['01_producto_lr100_specs.txt', '02_producto_lr200_specs.txt']","**Autonomía:**
+*   **LR-200:** 180 minutos [02_producto_lr200_specs:0].
+*   **LR-100:** 90 minutos [01_producto_lr100_specs:0].
+
+**Nivel de Ruido:**
+*   **LR-200:** 58 dB [02_producto_lr200_specs:0].
+*   **LR-100:** 68 dB [01_producto_lr100_specs:0].
+
+**Función de Fregado:**
+*   **LR-200:** Sí, con dosificación automática [02_producto_lr200_specs:0].
+*   **LR-100:** No disponible [01_producto_lr100_specs:0].
+
+**Capacidad de Mapeo:**
+*   **LR-200:** SLAM con LiDAR y cámara, multi-planta hasta 4 niveles [10_comparativa_competencia:2].
+*   **LR-100:** No se proporciona información específica sobre su capacidad de mapeo [01_producto_lr100_specs:0].",1,745,970,13.932083651001449,0.8532291209491213,1.0,True,RAG simple · con thinking
+s0-think-1,RAG simple,q8,comparativa,"Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?","El LR-200 cuesta 599 €, ofrece 180 minutos de autonomía y 36 meses de garantía. CleanX Pro cuesta 549 €, ofrece 150 minutos y 24 meses de garantía; no incluye fregado, mientras que el LR-200 sí. RoboNeat 5 cuesta 699 €, ofrece 200 minutos y 24 meses de garantía; no soporta gestión multi-planta, mientras que el LR-200 permite hasta cuatro plantas.","['10_comparativa_competencia.txt', '02_producto_lr200_specs.txt']","**Comparativa de LR-200 vs. Competidores**
+
+| Característica | LR-200 | CleanX Pro | RoboNeat 5 |
+| :--- | :--- | :--- | :--- |
+| **Precio** | 599 € [10_comparativa_competencia:2] | 549 € [10_comparativa_competencia:0] | 699 € [10_comparativa_competencia:0] |
+| **Autonomía** | 180 minutos [10_comparativa_competencia:2] | 150 minutos [10_comparativa_competencia:0] | 200 minutos [10_comparativa_competencia:0] |
+| **Garantía** | 36 meses [10_comparativa_competencia:2] | 24 meses [10_comparativa_competencia:0] | 24 meses [10_comparativa_competencia:0] |
+
+**Ventajas del LR-200:**
+
+*   **Frente a CleanX Pro (Fregado):** El LR-200 cuenta con función de fregado [02_producto_lr200_specs:0], una función que el CleanX Pro no incluye [10_comparativa_competencia:0].
+*   **Frente a RoboNeat 5 (Gestión de plantas):** El LR-200 soporta multi-planta hasta 4 niveles [10_comparativa_competencia:2].",1,754,1308,18.71874026599835,0.8131222216694007,1.0,True,RAG simple · con thinking
+s0-think-0,RAG simple,q8,comparativa,"Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?","El LR-200 cuesta 599 €, ofrece 180 minutos de autonomía y 36 meses de garantía. CleanX Pro cuesta 549 €, ofrece 150 minutos y 24 meses de garantía; no incluye fregado, mientras que el LR-200 sí. RoboNeat 5 cuesta 699 €, ofrece 200 minutos y 24 meses de garantía; no soporta gestión multi-planta, mientras que el LR-200 permite hasta cuatro plantas.","['10_comparativa_competencia.txt', '02_producto_lr200_specs.txt']","**Comparativa interna (LR-200 vs. CleanX Pro vs. RoboNeat 5):**
+
+*   **Precio:** LR-200 (599 €) es más caro que CleanX Pro (549 €) y más barato que RoboNeat 5 (699 €) [10_comparativa_competencia:2].
+*   **Autonomía:** LR-200 (180 minutos) es menor que RoboNeat 5 (200 minutos) y mayor que CleanX Pro (150 minutos) [10_comparativa_competencia:2].
+*   **Garantía:** LR-200 (36 meses) es mayor que CleanX Pro (24 meses) y mayor que RoboNeat 5 (24 meses) [10_comparativa_competencia:2].
+
+**Ventajas específicas:**
+
+*   **Fregado frente a CleanX Pro:** El LR-200 ofrece función de fregado, la cual está ausente en CleanX Pro [10_comparativa_competencia:2].
+*   **Gestión de plantas frente a RoboNeat 5:** El LR-200 ofrece soporte multi-planta, mientras que RoboNeat 5 no soporta [10_comparativa_competencia:2].",1,747,296,4.3990325090053375,0.9007746214561394,0.95,False,RAG simple · sin thinking

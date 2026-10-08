@@ -1,0 +1,17 @@
+{
+  "unit_tests_passed": 3,
+  "lint": "passed",
+  "report_tables_and_plot": "passed",
+  "real_systems_tested": [
+    "RAG simple",
+    "HyDE",
+    "MRKL",
+    "Self-Ask",
+    "IRCoT",
+    "MRKL con IRCoT"
+  ],
+  "all_collection_variants_tested": 8,
+  "class_experiment_executed": false,
+  "runtime_metadata_serialization": "passed",
+  "real_question_after_startup_fix": "q1; outputs/runtime-check/records/runtime__q1.json"
+}

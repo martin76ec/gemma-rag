@@ -1,0 +1,67 @@
+{
+  "key": "grid-2-k2",
+  "system": "RAG simple",
+  "id": "q8",
+  "type": "comparativa",
+  "question": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+  "reference": "El LR-200 cuesta 599 €, ofrece 180 minutos de autonomía y 36 meses de garantía. CleanX Pro cuesta 549 €, ofrece 150 minutos y 24 meses de garantía; no incluye fregado, mientras que el LR-200 sí. RoboNeat 5 cuesta 699 €, ofrece 200 minutos y 24 meses de garantía; no soporta gestión multi-planta, mientras que el LR-200 permite hasta cuatro plantas.",
+  "sources": [
+    "10_comparativa_competencia.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "**Comparativa LR-200 vs. Competidores:**\n\n*   **Precio:** El LR-200 cuesta 599 € [10_comparativa_competencia:2]. CleanX Pro cuesta 549 € [10_comparativa_competencia:0]. No se proporciona el precio de RoboNeat 5.\n*   **Autonomía:** El LR-200 ofrece 180 minutos [10_comparativa_competencia:2]. CleanX Pro ofrece 150 minutos [10_comparativa_competencia:0]. RoboNeat 5 ofrece 200 minutos [10_comparativa_competencia:0].\n*   **Garantía:** El LR-200 ofrece 36 meses [10_comparativa_competencia:2]. CleanX Pro ofrece 24 meses [10_comparativa_competencia:0]. No se proporciona la garantía de RoboNeat 5.\n\n**Ventajas del LR-200:**\n\n*   **Frente a CleanX Pro en fregado:** CleanX Pro no incluye función de fregado [10_comparativa_competencia:0].\n*   **Frente a RoboNeat 5 en gestión de plantas:** El LR-200 ofrece soporte multi-planta hasta 4 niveles [10_comparativa_competencia:2].",
+  "retrieved_contexts": [
+    "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con ",
+    "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la "
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:0",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con ",
+      "score": 0.47578129172325134
+    },
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la ",
+      "score": 0.44197797775268555
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:0",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con ",
+          "score": 0.47578129172325134
+        },
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la ",
+          "score": 0.44197797775268555
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 419,
+  "output_tokens": 1183,
+  "seconds": 16.454395995000596,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: Según la comparativa interna, ¿cómo se posiciona el LR-200 frente a CleanX Pro y RoboNeat 5 en precio, autonomía y garantía? ¿Qué ventaja ofrece frente a CleanX Pro en fregado y frente a RoboNeat 5 en gestión de plantas?\nDocumentos:\n[10_comparativa_competencia:0] Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con \n\n[10_comparativa_competencia:2] i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la ",
+      "response": "**Comparativa LR-200 vs. Competidores:**\n\n*   **Precio:** El LR-200 cuesta 599 € [10_comparativa_competencia:2]. CleanX Pro cuesta 549 € [10_comparativa_competencia:0]. No se proporciona el precio de RoboNeat 5.\n*   **Autonomía:** El LR-200 ofrece 180 minutos [10_comparativa_competencia:2]. CleanX Pro ofrece 150 minutos [10_comparativa_competencia:0]. RoboNeat 5 ofrece 200 minutos [10_comparativa_competencia:0].\n*   **Garantía:** El LR-200 ofrece 36 meses [10_comparativa_competencia:2]. CleanX Pro ofrece 24 meses [10_comparativa_competencia:0]. No se proporciona la garantía de RoboNeat 5.\n\n**Ventajas del LR-200:**\n\n*   **Frente a CleanX Pro en fregado:** CleanX Pro no incluye función de fregado [10_comparativa_competencia:0].\n*   **Frente a RoboNeat 5 en gestión de plantas:** El LR-200 ofrece soporte multi-planta hasta 4 niveles [10_comparativa_competencia:2].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 419,
+      "output_tokens": 1183
+    }
+  ],
+  "answer_correctness": 0.7732494015460125,
+  "faithfulness": 0.8461538461538461
+}

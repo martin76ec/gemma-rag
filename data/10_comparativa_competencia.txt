@@ -1,0 +1,26 @@
+Análisis competitivo — Q4 2024
+Documento interno, equipo de Producto
+
+Competidor A — modelo CleanX Pro
+  Autonomía: 150 minutos
+  Mapeo: SLAM básico, sin reconocimiento de objetos
+  Garantía: 24 meses
+  Precio: 549 €
+  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).
+
+Competidor B — modelo RoboNeat 5
+  Autonomía: 200 minutos
+  Mapeo: LiDAR combinado con cámara
+  Garantía: 24 meses
+  Precio: 699 €
+  Punto débil: app limitada, no soporta gestión multi-planta.
+
+Lumina LR-200 (referencia interna):
+  Autonomía: 180 minutos
+  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles
+  Garantía: 36 meses
+  Precio: 599 €
+  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.
+
+Conclusión del equipo:
+El LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor A, y sobre el precio frente al competidor B.

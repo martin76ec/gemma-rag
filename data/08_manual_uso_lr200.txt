@@ -1,0 +1,20 @@
+Manual de usuario — Lumina LR-200 (resumen)
+
+Primera configuración:
+1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.
+2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.
+3. Descargue la aplicación Lumina Home (versión 3.x o superior).
+4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en banda 2.4 GHz.
+
+Modo de fregado:
+- Llene el tanque solo con agua limpia o con la solución oficial Lumina Wash.
+- No utilice detergentes domésticos: dañan las juntas internas y anulan la garantía.
+- Vacíe el tanque después de cada uso para evitar acumulación de cal.
+
+Mantenimiento semanal recomendado:
+- Vaciar el depósito de polvo.
+- Limpiar el cepillo principal y los filtros HEPA.
+- Comprobar que las ruedas no acumulan pelos o hilos.
+
+Códigos de error:
+Para cualquier error con código E01–E09, consulte el documento de incidencias conocidas. Si el problema persiste tras aplicar la solución indicada, contacte con el canal de soporte adecuado según el tipo de incidencia.

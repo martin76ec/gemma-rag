@@ -1,0 +1,103 @@
+{
+  "question": "¿Cuales son los incidentes conocidos del firware 1.4?",
+  "system": "RAG simple",
+  "selection": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "top_k": 2
+  },
+  "config": {
+    "model": "gemma4:e4b",
+    "judge_model": "gemma4:e4b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "temperature": 0,
+    "seed": 42,
+    "embeddings": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "intfloat/multilingual-e5-small",
+      "lightonai/mDenseOn",
+      "BAAI/bge-m3"
+    ],
+    "tokenizers": [
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+      "dccuchile/bert-base-spanish-wwm-cased"
+    ],
+    "hf_revisions": {
+      "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+      "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+      "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+    },
+    "chunkers": [
+      "character",
+      "semantic"
+    ],
+    "top_k": [
+      2,
+      4
+    ],
+    "chunk_chars": 480,
+    "chunk_tokens": 96,
+    "semantic_threshold": 0.65,
+    "max_sentences": 4,
+    "max_fragments": 8,
+    "max_subquestions": 3,
+    "questions_path": "questions.json",
+    "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+  },
+  "evaluated_with_ragas": false,
+  "response": "Los documentos indican que se debe consultar el documento de incidencias conocidas para ver los incidentes del firmware 1.4 [05_acta_reunion_q3_2024:1].\n\nNo se detallan los incidentes conocidos del firmware 1.4 en los fragmentos proporcionados.",
+  "retrieved_contexts": [
+    "de incidencias co",
+    "ver documento de incidencias conocidas).\n\n2. Se aprueb"
+  ],
+  "documents": [
+    {
+      "id": "08_manual_uso_lr200:3",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "de incidencias co",
+      "score": 0.5920084714889526
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:1",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "ver documento de incidencias conocidas).\n\n2. Se aprueb",
+      "score": 0.5044610500335693
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuales son los incidentes conocidos del firware 1.4?",
+      "documents": [
+        {
+          "id": "08_manual_uso_lr200:3",
+          "source": "08_manual_uso_lr200.txt",
+          "text": "de incidencias co",
+          "score": 0.5920084714889526
+        },
+        {
+          "id": "05_acta_reunion_q3_2024:1",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "ver documento de incidencias conocidas).\n\n2. Se aprueb",
+          "score": 0.5044610500335693
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 149,
+  "output_tokens": 67,
+  "seconds": 1.0556214089992864,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuales son los incidentes conocidos del firware 1.4?\nDocumentos:\n[08_manual_uso_lr200:3] de incidencias co\n\n[05_acta_reunion_q3_2024:1] ver documento de incidencias conocidas).\n\n2. Se aprueb",
+      "response": "Los documentos indican que se debe consultar el documento de incidencias conocidas para ver los incidentes del firmware 1.4 [05_acta_reunion_q3_2024:1].\n\nNo se detallan los incidentes conocidos del firmware 1.4 en los fragmentos proporcionados.",
+      "input_tokens": 149,
+      "output_tokens": 67
+    }
+  ]
+}

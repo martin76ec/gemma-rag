@@ -1,0 +1,93 @@
+{
+  "key": "grid-0-k4",
+  "system": "RAG simple",
+  "id": "q7",
+  "type": "comparativa",
+  "question": "¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?",
+  "reference": "El LR-100 tiene unos 90 minutos de autonomía, emite 68 dB, no tiene función de fregado y se desplaza de forma aleatoria sin mapear la vivienda. El LR-200 tiene unos 180 minutos de autonomía, emite 58 dB, incluye fregado con dosificación automática y utiliza SLAM con LiDAR y cámara, permitiendo guardar hasta cuatro plantas.",
+  "sources": [
+    "01_producto_lr100_specs.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "**Autonomía:**\n*   **LR-200:** 180 minutos [02_producto_lr200_specs:0].\n*   **LR-100:** 90 minutos [01_producto_lr100_specs:0].\n\n**Nivel de Ruido:**\n*   **LR-200:** 58 dB [02_producto_lr200_specs:0].\n*   **LR-100:** 68 dB [01_producto_lr100_specs:0].\n\n**Función de Fregado:**\n*   **LR-200:** Sí, con dosificación automática [02_producto_lr200_specs:0].\n*   **LR-100:** No disponible [01_producto_lr100_specs:0].\n\n**Capacidad de Mapeo:**\n*   **LR-200:** SLAM con LiDAR y cámara, multi-planta hasta 4 niveles [10_comparativa_competencia:2].\n*   **LR-100:** No hay evidencia disponible sobre su capacidad de mapeo.",
+  "retrieved_contexts": [
+    "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+    "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+    "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y "
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "score": 0.5585891008377075
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+      "score": 0.544497549533844
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:2",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+      "score": 0.5439831018447876
+    },
+    {
+      "id": "01_producto_lr100_specs:0",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+      "score": 0.5394936203956604
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+          "score": 0.5585891008377075
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+          "score": 0.544497549533844
+        },
+        {
+          "id": "05_acta_reunion_q3_2024:2",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+          "score": 0.5439831018447876
+        },
+        {
+          "id": "01_producto_lr100_specs:0",
+          "source": "01_producto_lr100_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+          "score": 0.5394936203956604
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 712,
+  "output_tokens": 998,
+  "seconds": 14.137609202000021,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cómo se comparan el LR-100 y el LR-200 en autonomía, nivel de ruido, función de fregado y capacidad de mapeo?\nDocumentos:\n[10_comparativa_competencia:2] i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor \n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth \n\n[05_acta_reunion_q3_2024:2] a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una \n\n[01_producto_lr100_specs:0] Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+      "response": "**Autonomía:**\n*   **LR-200:** 180 minutos [02_producto_lr200_specs:0].\n*   **LR-100:** 90 minutos [01_producto_lr100_specs:0].\n\n**Nivel de Ruido:**\n*   **LR-200:** 58 dB [02_producto_lr200_specs:0].\n*   **LR-100:** 68 dB [01_producto_lr100_specs:0].\n\n**Función de Fregado:**\n*   **LR-200:** Sí, con dosificación automática [02_producto_lr200_specs:0].\n*   **LR-100:** No disponible [01_producto_lr100_specs:0].\n\n**Capacidad de Mapeo:**\n*   **LR-200:** SLAM con LiDAR y cámara, multi-planta hasta 4 niveles [10_comparativa_competencia:2].\n*   **LR-100:** No hay evidencia disponible sobre su capacidad de mapeo.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 712,
+      "output_tokens": 998
+    }
+  ],
+  "answer_correctness": 0.8532291209491213,
+  "faithfulness": 1.0
+}

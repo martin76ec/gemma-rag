@@ -1,0 +1,7 @@
+key,collection,embedding,tokenizer,chunker,top_k,answer_correctness,faithfulness
+grid-0-k2,0,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,character,2,0.6179454017758198,0.9078525641025641
+grid-0-k4,0,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,character,4,0.6906126333225894,0.925
+grid-1-k2,1,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,semantic,2,0.36878288934614073,0.5833333333333334
+grid-1-k4,1,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,mrm8488/TinyBERT-spanish-uncased-finetuned-ner,semantic,4,0.42740759590037286,0.7023809523809523
+grid-2-k2,2,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,character,2,0.568252185919141,0.9266025641025641
+grid-2-k4,2,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,dccuchile/bert-base-spanish-wwm-cased,character,4,0.6451125888833775,0.952922077922078

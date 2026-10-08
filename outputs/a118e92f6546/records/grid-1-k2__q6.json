@@ -1,0 +1,68 @@
+{
+  "key": "grid-1-k2",
+  "system": "RAG simple",
+  "id": "q6",
+  "type": "multihop",
+  "question": "El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?",
+  "reference": "El error E07 indica un fallo de comunicación con la base de carga. Hay que reiniciar el robot. Si persiste tras dos intentos, se considera un fallo de hardware. El canal de hardware es hardware@lumina-robotics.example o el teléfono +34 900 111 222, de lunes a viernes de 9:00 a 18:00.",
+  "sources": [
+    "08_manual_uso_lr200.txt",
+    "09_incidencias_conocidas.txt",
+    "07_soporte_contactos.txt"
+  ],
+  "response": "**Significado del error E07:**\nIndica un fallo de comunicación con la base de carga [09_incidencias_conocidas:12].\n\n**Qué debe intentar:**\nNo hay evidencia sobre los pasos de solución de problemas iniciales.\n\n**Si persiste tras dos intentos:**\nSe trata de un fallo de hardware y debe contactarse al canal correspondiente [09_incidencias_conocidas:14]. No se especifica el canal de soporte (email o teléfono) ni el horario.",
+  "retrieved_contexts": [
+    "Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.",
+    "- Error E07: fallo de comunicación con la base de carga."
+  ],
+  "documents": [
+    {
+      "id": "09_incidencias_conocidas:14",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.",
+      "score": 0.6758280992507935
+    },
+    {
+      "id": "09_incidencias_conocidas:12",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "- Error E07: fallo de comunicación con la base de carga.",
+      "score": 0.6320221424102783
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?",
+      "documents": [
+        {
+          "id": "09_incidencias_conocidas:14",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.",
+          "score": 0.6758280992507935
+        },
+        {
+          "id": "09_incidencias_conocidas:12",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "- Error E07: fallo de comunicación con la base de carga.",
+          "score": 0.6320221424102783
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 210,
+  "output_tokens": 708,
+  "seconds": 9.808962615001292,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?\nDocumentos:\n[09_incidencias_conocidas:14] Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n\n[09_incidencias_conocidas:12] - Error E07: fallo de comunicación con la base de carga.",
+      "response": "**Significado del error E07:**\nIndica un fallo de comunicación con la base de carga [09_incidencias_conocidas:12].\n\n**Qué debe intentar:**\nNo hay evidencia sobre los pasos de solución de problemas iniciales.\n\n**Si persiste tras dos intentos:**\nSe trata de un fallo de hardware y debe contactarse al canal correspondiente [09_incidencias_conocidas:14]. No se especifica el canal de soporte (email o teléfono) ni el horario.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 210,
+      "output_tokens": 708
+    }
+  ],
+  "answer_correctness": 0.4224142150384066,
+  "faithfulness": 0.6666666666666666
+}

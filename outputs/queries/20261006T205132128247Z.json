@@ -1,0 +1,103 @@
+{
+  "question": "¿Cuales son las incidencias conocidas de lumina robotics?",
+  "system": "RAG simple",
+  "selection": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "top_k": 2
+  },
+  "config": {
+    "model": "gemma4:e4b",
+    "judge_model": "gemma4:e4b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "temperature": 0,
+    "seed": 42,
+    "embeddings": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "intfloat/multilingual-e5-small",
+      "lightonai/mDenseOn",
+      "BAAI/bge-m3"
+    ],
+    "tokenizers": [
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+      "dccuchile/bert-base-spanish-wwm-cased"
+    ],
+    "hf_revisions": {
+      "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+      "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+      "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+    },
+    "chunkers": [
+      "character",
+      "semantic"
+    ],
+    "top_k": [
+      2,
+      4
+    ],
+    "chunk_chars": 480,
+    "chunk_tokens": 96,
+    "semantic_threshold": 0.65,
+    "max_sentences": 4,
+    "max_fragments": 8,
+    "max_subquestions": 3,
+    "questions_path": "questions.json",
+    "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+  },
+  "evaluated_with_ragas": false,
+  "response": "Las incidencias conocidas de Lumina Robotics son:\n\n*   **LR-100:**\n    *   **Bug F-203:** En firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación [09_incidencias_conocidas:0].\n    *   **Bug F-217:** La aplicación pierde la conexión tras cualquier actualización del router doméstico. La solución temporal es desemparejar y volver a emparejar el robot [09_incidencias_conocidas:0].",
+  "retrieved_contexts": [
+    "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+    "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por "
+  ],
+  "documents": [
+    {
+      "id": "09_incidencias_conocidas:0",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+      "score": 0.5487565398216248
+    },
+    {
+      "id": "06_garantias:0",
+      "source": "06_garantias.txt",
+      "text": "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+      "score": 0.49368882179260254
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuales son las incidencias conocidas de lumina robotics?",
+      "documents": [
+        {
+          "id": "09_incidencias_conocidas:0",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+          "score": 0.5487565398216248
+        },
+        {
+          "id": "06_garantias:0",
+          "source": "06_garantias.txt",
+          "text": "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+          "score": 0.49368882179260254
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 355,
+  "output_tokens": 139,
+  "seconds": 2.053102282996406,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuales son las incidencias conocidas de lumina robotics?\nDocumentos:\n[09_incidencias_conocidas:0] Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot\n\n[06_garantias:0] Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por ",
+      "response": "Las incidencias conocidas de Lumina Robotics son:\n\n*   **LR-100:**\n    *   **Bug F-203:** En firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación [09_incidencias_conocidas:0].\n    *   **Bug F-217:** La aplicación pierde la conexión tras cualquier actualización del router doméstico. La solución temporal es desemparejar y volver a emparejar el robot [09_incidencias_conocidas:0].",
+      "input_tokens": 355,
+      "output_tokens": 139
+    }
+  ]
+}

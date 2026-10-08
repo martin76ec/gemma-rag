@@ -1,0 +1,202 @@
+{
+  "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "dimensions": 384,
+  "chunks": [
+    {
+      "id": "01_producto_lr100_specs:0",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y "
+    },
+    {
+      "id": "01_producto_lr100_specs:1",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "sensor de caída\nMapeo: aleatorio (no realiza mapeo de la vivienda)\nApp compatible: Lumina"
+    },
+    {
+      "id": "01_producto_lr100_specs:2",
+      "source": "01_producto_lr100_specs.txt",
+      "text": " Home v1.x\nPrecio de salida: 249 €\n\nNotas internas: el firmware 1.4 sigue siendo la última versión publicada. No se prevén nuevas actualizaciones.\n"
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth "
+    },
+    {
+      "id": "02_producto_lr200_specs:1",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "5.0\nSensores: LiDAR de 360°, cámara frontal, 12 sensores anticaída\nMapeo: "
+    },
+    {
+      "id": "02_producto_lr200_specs:2",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "SLAM, hasta 4 plantas guardadas en memoria\nApp compatible: Lumina Home v3.x o superior\nPrecio de salida: 599 €\n\nVersión actual de firmware: 2.1 (publicada en noviembre de 2024).\n"
+    },
+    {
+      "id": "03_politica_devoluciones_2023:0",
+      "source": "03_politica_devoluciones_2023.txt",
+      "text": "Política de devoluciones — Lumina Robotics\nVigencia: del 1 de enero de 2023 al 31 de marzo de 2024\nEstado: SUSTITUIDA por la versión 2024\n\nPlazo: 30 días naturales desde la recepción del producto.\nEstado del producto: debe devolverse en su embalaje original con todos los accesorios.\nCargo por reposición: 15% del precio de compra si el producto ha sido abierto.\nReembolso: en el método de pago original, entre 7 y 10 días laborables tras recibir la devolución"
+    },
+    {
+      "id": "03_politica_devoluciones_2023:1",
+      "source": "03_politica_devoluciones_2023.txt",
+      "text": ".\nGastos de envío de"
+    },
+    {
+      "id": "03_politica_devoluciones_2023:2",
+      "source": "03_politica_devoluciones_2023.txt",
+      "text": " la devolución: a cargo del cliente, salvo en caso de defecto de fábrica.\n\nEsta política se mantiene archivada únicamente como referencia histórica para reclamaciones anteriores a abril de 2024.\n"
+    },
+    {
+      "id": "04_politica_devoluciones_2024:0",
+      "source": "04_politica_devoluciones_2024.txt",
+      "text": "Política de devoluciones — Lumina Robotics\nVigencia: desde el 1 de abril de 2024\nEstado: VIGENTE\n\nPlazo: 60 días naturales desde la recepción del producto.\n\nEstado del producto:\n- Sin abrir: reembolso íntegro, sin cargos adicionales.\n- Abierto y en buen estado: reembolso íntegro si se devuelve en los primeros 30 días.\n- Abierto y en buen estado, entre el día 31 y el 60: cargo del 10% sobre el precio de compra.\n- Con daños "
+    },
+    {
+      "id": "04_politica_devoluciones_2024:1",
+      "source": "04_politica_devoluciones_2024.txt",
+      "text": "no atribuibles a defecto de fábrica: la devolución se "
+    },
+    {
+      "id": "04_politica_devoluciones_2024:2",
+      "source": "04_politica_devoluciones_2024.txt",
+      "text": "rechaza.\n\nReembolso: en el método de pago original, en un máximo de 5 días laborables tras la recepción.\nGastos de envío de la devolución: gratuitos en pedidos superiores a 200 €.\n\nExcepciones: los productos discontinuados o de la sección outlet se rigen por las condiciones específicas indicadas en su ficha en el momento de la compra.\n"
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:0",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "Acta — Reunión de producto Q3 2024\nFecha: 12 de septiembre de 2024\nAsistentes: Marta Ruiz (CEO), Javier Soto (CTO), Elena Park (Producto)\n\nDecisiones acordadas:\n\n1. El CTO presenta el plan de simplificación de catálogo. Tras revisar las incidencias acumuladas en el último año, recomienda discontinuar el modelo LR-100 antes del cierre de año. El motivo principal son los fallos recurrentes de firmware sin solución prevista ("
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:1",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "ver documento de incidencias conocidas).\n\n2. Se aprueb"
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:2",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una "
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:3",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "línea de soporte preferente para incidencias del LR-"
+    },
+    {
+      "id": "05_acta_reunion_q3_2024:4",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "200, dada su criticidad para el negocio.\n"
+    },
+    {
+      "id": "06_garantias:0",
+      "source": "06_garantias.txt",
+      "text": "Tabla de garantías — Lumina Robotics\n\nGarantía estándar por modelo:\n- LR-100: 24 meses. Garantía extendida no disponible.\n- LR-200: 36 meses. Garantía extendida opcional hasta 60 meses (+59 €).\n- LR-Mini (accesorio): 12 meses.\n- Baterías de repuesto: 6 meses, no extensibles.\n\nCobertura:\nLa garantía cubre defectos de fabricación y fallos de los componentes en condiciones normales de uso. No cubre daños provocados por "
+    },
+    {
+      "id": "06_garantias:1",
+      "source": "06_garantias.txt",
+      "text": "uso indebido, exposición a líquidos no especificados en el m"
+    },
+    {
+      "id": "06_garantias:2",
+      "source": "06_garantias.txt",
+      "text": "anual, modificaciones no autorizadas o desgaste habitual de consumibles (cepillos, filtros).\n\nTramitación:\nA través del portal de soporte, indicando el número de serie del producto. Los plazos de respuesta dependen del tipo de incidencia (ver documento de contactos de soporte).\n"
+    },
+    {
+      "id": "07_soporte_contactos:0",
+      "source": "07_soporte_contactos.txt",
+      "text": "Contactos de soporte — Lumina Robotics\n\nSoporte de hardware (averías mecánicas, piezas de repuesto, baterías):\n  Email: hardware@lumina-robotics.example\n  Teléfono: +34 900 111 222\n  Horario: lunes a viernes, 9:00–18:00\n\nSoporte de software (app, conectividad, actualizaciones de firmware):\n  Email: app-support@lumina-robotics.example\n  Chat dentro de la "
+    },
+    {
+      "id": "07_soporte_contactos:1",
+      "source": "07_soporte_contactos.txt",
+      "text": "app Lumina Home, disponible 24/7\n\nDevoluciones, facturación y gestiones administrativas:\n  Email: rma@lumina-robotics.exampl"
+    },
+    {
+      "id": "07_soporte_contactos:2",
+      "source": "07_soporte_contactos.txt",
+      "text": "e\n  Solo por email; plazo medio de respuesta: 48 horas.\n\nLínea preferente para incidencias críticas del LR-200:\n  Teléfono: +34 900 333 444\n  Horario: lunes a domingo, 8:00–22:00\n  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.\n"
+    },
+    {
+      "id": "08_manual_uso_lr200:0",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "Manual de usuario — Lumina LR-200 (resumen)\n\nPrimera configuración:\n1. Coloque la base de carga en una zona despejada, con al menos 50 cm libres a cada lado y 1 metro libre por delante.\n2. Cargue el robot durante un mínimo de 3 horas antes del primer uso.\n3. Descargue la aplicación Lumina Home (versión 3.x o superior).\n4. Empareje el robot siguiendo las instrucciones de la app. La conexión Wi-Fi inicial debe hacerse en "
+    },
+    {
+      "id": "08_manual_uso_lr200:1",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "banda 2.4 GHz.\n\nModo de fregado:\n- Llene el tanque solo c"
+    },
+    {
+      "id": "08_manual_uso_lr200:2",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "on agua limpia o con la solución oficial Lumina Wash.\n- No utilice detergentes domésticos: dañan las juntas internas y anulan la garantía.\n- Vacíe el tanque después de cada uso para evitar acumulación de cal.\n\nMantenimiento semanal recomendado:\n- Vaciar el depósito de polvo.\n- Limpiar el cepillo principal y los filtros HEPA.\n- Comprobar que las ruedas no acumulan pelos o hilos.\n\nCódigos de error:\nPara cualquier error con código E01–E09, consulte el documento "
+    },
+    {
+      "id": "08_manual_uso_lr200:3",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "de incidencias co"
+    },
+    {
+      "id": "08_manual_uso_lr200:4",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "nocidas. Si el problema persiste tras aplicar la solución indicada, contacte con el canal de soporte adecuado según el tipo de incidencia.\n"
+    },
+    {
+      "id": "09_incidencias_conocidas:0",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot"
+    },
+    {
+      "id": "09_incidencias_conocidas:1",
+      "source": "09_incidencias_conocidas.txt",
+      "text": ".\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc"
+    },
+    {
+      "id": "09_incidencias_conocidas:2",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se "
+    },
+    {
+      "id": "09_incidencias_conocidas:3",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "reinicia espontáneamente tras un corte de luz. Resuelto en el "
+    },
+    {
+      "id": "09_incidencias_conocidas:4",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "firmware 2.1 (publicado en noviembre de 2024). Se recomienda actualizar.\n"
+    },
+    {
+      "id": "10_comparativa_competencia:0",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Análisis competitivo — Q4 2024\nDocumento interno, equipo de Producto\n\nCompetidor A — modelo CleanX Pro\n  Autonomía: 150 minutos\n  Mapeo: SLAM básico, sin reconocimiento de objetos\n  Garantía: 24 meses\n  Precio: 549 €\n  Punto débil: no incluye función de fregado y nivel de ruido elevado (65 dB).\n\nCompetidor B — modelo RoboNeat 5\n  Autonomía: 200 minutos\n  Mapeo: LiDAR combinado con cámara\n  Garantía: 24 meses\n  Precio: 699 €\n  Punto débil: app limitada, no soporta "
+    },
+    {
+      "id": "10_comparativa_competencia:1",
+      "source": "10_comparativa_competencia.txt",
+      "text": "gestión mult"
+    },
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor "
+    },
+    {
+      "id": "10_comparativa_competencia:3",
+      "source": "10_comparativa_competencia.txt",
+      "text": "A, y sobre el precio frente al "
+    },
+    {
+      "id": "10_comparativa_competencia:4",
+      "source": "10_comparativa_competencia.txt",
+      "text": "competidor B.\n"
+    }
+  ],
+  "load_and_index_seconds": 1.715669444998639,
+  "prompts": {
+    "query": "",
+    "document": ""
+  }
+}

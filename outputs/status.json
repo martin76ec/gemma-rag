@@ -1,0 +1,9 @@
+{
+  "status": "ready_with_representative_questions",
+  "missing": [
+    "eight class questions and reference answers",
+    "class IRCoT source for exact signatures and limits"
+  ],
+  "model": "gemma4:e4b",
+  "class_results_available": false
+}

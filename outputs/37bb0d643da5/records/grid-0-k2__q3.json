@@ -1,0 +1,65 @@
+{
+  "key": "grid-0-k2",
+  "system": "RAG simple",
+  "id": "q3",
+  "type": "temporal",
+  "question": "Según las políticas del corpus, ¿cómo cambió el plazo de devolución desde el 1 de abril de 2024? Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, ¿qué cargo y condiciones de envío se aplican si se devuelve 45 días después de recibirlo?",
+  "reference": "Hasta el 31 de marzo de 2024 el plazo era de 30 días naturales; desde el 1 de abril de 2024 es de 60 días naturales. La devolución del LR-200 abierto y en buen estado en el día 45 está dentro del nuevo plazo y tiene un cargo del 10 % del precio de compra, es decir, 59,90 €. El envío de devolución es gratuito porque el pedido supera los 200 €.",
+  "sources": [
+    "03_politica_devoluciones_2023.txt",
+    "04_politica_devoluciones_2024.txt"
+  ],
+  "response": "El plazo de devolución cambió de 30 días naturales desde la recepción del producto (vigente hasta el 31 de marzo de 2024) a [04_politica_devoluciones_2024:2] (no se especifica el nuevo plazo en el fragmento proporcionado).\n\nPara un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, si se devuelve 45 días después de recibirlo:\n*   **Cargo:** No se especifica el cargo aplicable para un producto abierto en la nueva política.\n*   **Condiciones de envío:** Los gastos de envío de la devolución son gratuitos en pedidos superiores a 200 € [04_politica_devoluciones_2024:2].",
+  "retrieved_contexts": [
+    "rechaza.\n\nReembolso: en el método de pago original, en un máximo de 5 días laborables tras la recepción.\nGastos de envío de la devolución: gratuitos en pedidos superiores a 200 €.\n\nExcepciones: los productos discontinuados o de la sección outlet se rigen por las condiciones específicas indicadas en su ficha en el momento de la compra.\n",
+    "Política de devoluciones — Lumina Robotics\nVigencia: del 1 de enero de 2023 al 31 de marzo de 2024\nEstado: SUSTITUIDA por la versión 2024\n\nPlazo: 30 días naturales desde la recepción del producto.\nEstado del producto: debe devolverse en su embalaje original con todos los accesorios.\nCargo por reposición: 15% del precio de compra si el producto ha sido abierto.\nReembolso: en el método de pago original, entre 7 y 10 días laborables tras recibir la devolución"
+  ],
+  "documents": [
+    {
+      "id": "04_politica_devoluciones_2024:2",
+      "source": "04_politica_devoluciones_2024.txt",
+      "text": "rechaza.\n\nReembolso: en el método de pago original, en un máximo de 5 días laborables tras la recepción.\nGastos de envío de la devolución: gratuitos en pedidos superiores a 200 €.\n\nExcepciones: los productos discontinuados o de la sección outlet se rigen por las condiciones específicas indicadas en su ficha en el momento de la compra.\n",
+      "score": 0.622262179851532
+    },
+    {
+      "id": "03_politica_devoluciones_2023:0",
+      "source": "03_politica_devoluciones_2023.txt",
+      "text": "Política de devoluciones — Lumina Robotics\nVigencia: del 1 de enero de 2023 al 31 de marzo de 2024\nEstado: SUSTITUIDA por la versión 2024\n\nPlazo: 30 días naturales desde la recepción del producto.\nEstado del producto: debe devolverse en su embalaje original con todos los accesorios.\nCargo por reposición: 15% del precio de compra si el producto ha sido abierto.\nReembolso: en el método de pago original, entre 7 y 10 días laborables tras recibir la devolución",
+      "score": 0.6164723634719849
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "Según las políticas del corpus, ¿cómo cambió el plazo de devolución desde el 1 de abril de 2024? Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, ¿qué cargo y condiciones de envío se aplican si se devuelve 45 días después de recibirlo?",
+      "documents": [
+        {
+          "id": "04_politica_devoluciones_2024:2",
+          "source": "04_politica_devoluciones_2024.txt",
+          "text": "rechaza.\n\nReembolso: en el método de pago original, en un máximo de 5 días laborables tras la recepción.\nGastos de envío de la devolución: gratuitos en pedidos superiores a 200 €.\n\nExcepciones: los productos discontinuados o de la sección outlet se rigen por las condiciones específicas indicadas en su ficha en el momento de la compra.\n",
+          "score": 0.622262179851532
+        },
+        {
+          "id": "03_politica_devoluciones_2023:0",
+          "source": "03_politica_devoluciones_2023.txt",
+          "text": "Política de devoluciones — Lumina Robotics\nVigencia: del 1 de enero de 2023 al 31 de marzo de 2024\nEstado: SUSTITUIDA por la versión 2024\n\nPlazo: 30 días naturales desde la recepción del producto.\nEstado del producto: debe devolverse en su embalaje original con todos los accesorios.\nCargo por reposición: 15% del precio de compra si el producto ha sido abierto.\nReembolso: en el método de pago original, entre 7 y 10 días laborables tras recibir la devolución",
+          "score": 0.6164723634719849
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 400,
+  "output_tokens": 174,
+  "seconds": 2.675452657000278,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: Según las políticas del corpus, ¿cómo cambió el plazo de devolución desde el 1 de abril de 2024? Para un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, ¿qué cargo y condiciones de envío se aplican si se devuelve 45 días después de recibirlo?\nDocumentos:\n[04_politica_devoluciones_2024:2] rechaza.\n\nReembolso: en el método de pago original, en un máximo de 5 días laborables tras la recepción.\nGastos de envío de la devolución: gratuitos en pedidos superiores a 200 €.\n\nExcepciones: los productos discontinuados o de la sección outlet se rigen por las condiciones específicas indicadas en su ficha en el momento de la compra.\n\n\n[03_politica_devoluciones_2023:0] Política de devoluciones — Lumina Robotics\nVigencia: del 1 de enero de 2023 al 31 de marzo de 2024\nEstado: SUSTITUIDA por la versión 2024\n\nPlazo: 30 días naturales desde la recepción del producto.\nEstado del producto: debe devolverse en su embalaje original con todos los accesorios.\nCargo por reposición: 15% del precio de compra si el producto ha sido abierto.\nReembolso: en el método de pago original, entre 7 y 10 días laborables tras recibir la devolución",
+      "response": "El plazo de devolución cambió de 30 días naturales desde la recepción del producto (vigente hasta el 31 de marzo de 2024) a [04_politica_devoluciones_2024:2] (no se especifica el nuevo plazo en el fragmento proporcionado).\n\nPara un LR-200 comprado por 599 € bajo la nueva política, abierto y en buen estado, si se devuelve 45 días después de recibirlo:\n*   **Cargo:** No se especifica el cargo aplicable para un producto abierto en la nueva política.\n*   **Condiciones de envío:** Los gastos de envío de la devolución son gratuitos en pedidos superiores a 200 € [04_politica_devoluciones_2024:2].",
+      "input_tokens": 400,
+      "output_tokens": 174
+    }
+  ],
+  "answer_correctness": 0.4694736427752437,
+  "faithfulness": 0.2
+}

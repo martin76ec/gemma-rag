@@ -1,0 +1,173 @@
+{
+  "question": "¿Qué hago si persiste el error E07?",
+  "system": "MRKL con IRCoT",
+  "selection": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "top_k": 2
+  },
+  "config": {
+    "model": "gemma4:e4b",
+    "judge_model": "gemma4:e4b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "temperature": 0,
+    "think": true,
+    "num_predict": 4096,
+    "seed": 42,
+    "embeddings": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "intfloat/multilingual-e5-small",
+      "lightonai/mDenseOn",
+      "BAAI/bge-m3"
+    ],
+    "tokenizers": [
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+      "dccuchile/bert-base-spanish-wwm-cased"
+    ],
+    "hf_revisions": {
+      "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+      "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+      "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+    },
+    "chunkers": [
+      "character",
+      "semantic"
+    ],
+    "top_k": [
+      2,
+      4
+    ],
+    "chunk_chars": 480,
+    "chunk_tokens": 96,
+    "semantic_threshold": 0.65,
+    "max_sentences": 4,
+    "max_fragments": 8,
+    "max_subquestions": 3,
+    "questions_path": "questions.json",
+    "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+  },
+  "evaluated_with_ragas": false,
+  "response": "El error E07 es un fallo de comunicación con la base de carga [09_incidencias_conocidas:2].\n\nLa solución es:\n1. Reiniciar el robot.\n2. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente [09_incidencias_conocidas:2].",
+  "retrieved_contexts": [
+    "tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se ",
+    ".\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc",
+    "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot"
+  ],
+  "documents": [
+    {
+      "id": "09_incidencias_conocidas:2",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se ",
+      "score": 0.60030198097229
+    },
+    {
+      "id": "09_incidencias_conocidas:1",
+      "source": "09_incidencias_conocidas.txt",
+      "text": ".\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc",
+      "score": 0.4278174936771393
+    },
+    {
+      "id": "09_incidencias_conocidas:0",
+      "source": "09_incidencias_conocidas.txt",
+      "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+      "score": 0.5020908117294312
+    }
+  ],
+  "trace": [
+    {
+      "stage": "route",
+      "sources": [
+        "09_incidencias_conocidas.txt",
+        "08_manual_uso_lr200.txt",
+        "07_soporte_contactos.txt"
+      ]
+    },
+    {
+      "stage": "initial_retrieval",
+      "query": "¿Qué hago si persiste el error E07?",
+      "documents": [
+        {
+          "id": "09_incidencias_conocidas:2",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se ",
+          "score": 0.60030198097229
+        },
+        {
+          "id": "09_incidencias_conocidas:1",
+          "source": "09_incidencias_conocidas.txt",
+          "text": ".\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc",
+          "score": 0.4278174936771393
+        }
+      ]
+    },
+    {
+      "stage": "ircot",
+      "sentence": "La evidencia indica que si el error E07 persiste después de reiniciar el robot dos veces, se trata de un fallo de hardware que requiere contactar al canal correspondiente.",
+      "retrieved": [
+        {
+          "id": "09_incidencias_conocidas:2",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se ",
+          "score": 0.6457877159118652
+        },
+        {
+          "id": "09_incidencias_conocidas:0",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+          "score": 0.5020908117294312
+        }
+      ],
+      "added": [
+        {
+          "id": "09_incidencias_conocidas:0",
+          "source": "09_incidencias_conocidas.txt",
+          "text": "Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+          "score": 0.5020908117294312
+        }
+      ],
+      "total_fragments": 3
+    }
+  ],
+  "llm_calls": 4,
+  "input_tokens": 1201,
+  "output_tokens": 2351,
+  "seconds": 64.20229162500073,
+  "calls": [
+    {
+      "prompt": "Selecciona los archivos necesarios para contestar la pregunta. Devuelve sus nombres exactos. Incluye todos los necesarios para razonamiento multihop.\nPregunta: ¿Qué hago si persiste el error E07?\nArchivos: ['01_producto_lr100_specs.txt', '02_producto_lr200_specs.txt', '03_politica_devoluciones_2023.txt', '04_politica_devoluciones_2024.txt', '05_acta_reunion_q3_2024.txt', '06_garantias.txt', '07_soporte_contactos.txt', '08_manual_uso_lr200.txt', '09_incidencias_conocidas.txt', '10_comparativa_competencia.txt']",
+      "response": "{\n    \"sources\": [\n        \"09_incidencias_conocidas.txt\",\n        \"08_manual_uso_lr200.txt\",\n        \"07_soporte_contactos.txt\"\n    ]\n}",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 213,
+      "output_tokens": 850
+    },
+    {
+      "prompt": "Produce exactamente UNA oración breve de razonamiento basada en la evidencia, para orientar la siguiente búsqueda. No inventes hechos.\nPregunta: ¿Qué hago si persiste el error E07?\nPasos anteriores: []\nEvidencia:\n[09_incidencias_conocidas:2] tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se \n\n[09_incidencias_conocidas:1] .\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc",
+      "response": "La evidencia indica que si el error E07 persiste después de reiniciar el robot dos veces, se trata de un fallo de hardware que requiere contactar al canal correspondiente.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 225,
+      "output_tokens": 501
+    },
+    {
+      "prompt": "¿Falta evidencia para responder la pregunta? continuar=true solo si falta.\nPregunta: ¿Qué hago si persiste el error E07?\nPasos: ['La evidencia indica que si el error E07 persiste después de reiniciar el robot dos veces, se trata de un fallo de hardware que requiere contactar al canal correspondiente.']\nEvidencia:\n[09_incidencias_conocidas:2] tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se \n\n[09_incidencias_conocidas:1] .\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc\n\n[09_incidencias_conocidas:0] Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+      "response": "{\n  \"continuar\": false\n}",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 379,
+      "output_tokens": 404
+    },
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Qué hago si persiste el error E07?\nDocumentos:\n[09_incidencias_conocidas:2] tamente. Solución: retirarlo y volver a colocarlo asegurándose de oír el clic.\n- Error E04: cepillo principal bloqueado. Solución: limpiar manualmente cualquier pelo o hilo enrollado.\n- Error E07: fallo de comunicación con la base de carga. Solución: reiniciar el robot. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente.\n- Bug F-301: el mapa SLAM se \n\n[09_incidencias_conocidas:1] .\n\nLR-200:\n- Error E01: el tanque de agua no encaja correc\n\n[09_incidencias_conocidas:0] Incidencias conocidas — Lumina Robotics\nÚltima actualización: octubre de 2024\n\nLR-100:\n- Bug F-203: en firmware 1.4 o anterior, el robot puede entrar en bucle al detectar alfombras de tonos oscuros. No hay solución prevista; el modelo está en proceso de discontinuación.\n- Bug F-217: la app pierde la conexión tras cualquier actualización del router doméstico. Solución temporal: desemparejar y volver a emparejar el robot",
+      "response": "El error E07 es un fallo de comunicación con la base de carga [09_incidencias_conocidas:2].\n\nLa solución es:\n1. Reiniciar el robot.\n2. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente [09_incidencias_conocidas:2].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 384,
+      "output_tokens": 596
+    }
+  ]
+}

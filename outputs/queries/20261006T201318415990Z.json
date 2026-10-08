@@ -1,0 +1,103 @@
+{
+  "question": "¿Cuál es la autonomía del LR-200?",
+  "system": "RAG simple",
+  "selection": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "top_k": 2
+  },
+  "config": {
+    "model": "gemma4:e4b",
+    "judge_model": "gemma4:e4b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "temperature": 0,
+    "seed": 42,
+    "embeddings": [
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "intfloat/multilingual-e5-small",
+      "lightonai/mDenseOn",
+      "BAAI/bge-m3"
+    ],
+    "tokenizers": [
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+      "dccuchile/bert-base-spanish-wwm-cased"
+    ],
+    "hf_revisions": {
+      "lightonai/mDenseOn": "a5fdb000f7a21da96c3bddde3a782ef777316df3",
+      "BAAI/bge-m3": "5617a9f61b028005a4858fdac845db406aefb181",
+      "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "mrm8488/TinyBERT-spanish-uncased-finetuned-ner": "a1eb804867635f501d62dda14e7ae8a182f96dd6",
+      "dccuchile/bert-base-spanish-wwm-cased": "c4d86612f51b4f46759c8390d1798c2febe71b93"
+    },
+    "chunkers": [
+      "character",
+      "semantic"
+    ],
+    "top_k": [
+      2,
+      4
+    ],
+    "chunk_chars": 480,
+    "chunk_tokens": 96,
+    "semantic_threshold": 0.65,
+    "max_sentences": 4,
+    "max_fragments": 8,
+    "max_subquestions": 3,
+    "questions_path": "questions.json",
+    "question_provenance": "representative_questions_authored_from_corpus_not_original_class_questions"
+  },
+  "evaluated_with_ragas": false,
+  "response": "La autonomía del LR-200 es de 180 minutos [10_comparativa_competencia:2].",
+  "retrieved_contexts": [
+    "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+    "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor "
+  ],
+  "documents": [
+    {
+      "id": "05_acta_reunion_q3_2024:2",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+      "score": 0.6167391538619995
+    },
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "score": 0.573350727558136
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la autonomía del LR-200?",
+      "documents": [
+        {
+          "id": "05_acta_reunion_q3_2024:2",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+          "score": 0.6167391538619995
+        },
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+          "score": 0.573350727558136
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 374,
+  "output_tokens": 28,
+  "seconds": 5.26246114499736,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la autonomía del LR-200?\nDocumentos:\n[05_acta_reunion_q3_2024:2] a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una \n\n[10_comparativa_competencia:2] i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "response": "La autonomía del LR-200 es de 180 minutos [10_comparativa_competencia:2].",
+      "input_tokens": 374,
+      "output_tokens": 28
+    }
+  ]
+}

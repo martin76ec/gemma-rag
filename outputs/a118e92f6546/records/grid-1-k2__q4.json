@@ -1,0 +1,67 @@
+{
+  "key": "grid-1-k2",
+  "system": "RAG simple",
+  "id": "q4",
+  "type": "temporal",
+  "question": "Según el corpus, ¿qué fallo del LR-200 relacionado con los cortes de luz se resolvió mediante una actualización, qué versión lo corrige y cuándo se publicó?",
+  "reference": "El bug F-301 provocaba que el mapa SLAM del LR-200 se reiniciara espontáneamente tras un corte de luz. Se resolvió en el firmware 2.1, publicado en noviembre de 2024; se recomienda actualizar a esa versión.",
+  "sources": [
+    "09_incidencias_conocidas.txt",
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "No hay evidencia en los documentos proporcionados sobre un fallo del LR-200 relacionado con cortes de luz, la versión que lo corrige o la fecha de publicación de la actualización.",
+  "retrieved_contexts": [
+    "Lumina LR-200 (referencia interna):",
+    "Especificaciones técnicas — Lumina LR-200"
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:14",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Lumina LR-200 (referencia interna):",
+      "score": 0.6693007946014404
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200",
+      "score": 0.6618812084197998
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "Según el corpus, ¿qué fallo del LR-200 relacionado con los cortes de luz se resolvió mediante una actualización, qué versión lo corrige y cuándo se publicó?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:14",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Lumina LR-200 (referencia interna):",
+          "score": 0.6693007946014404
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200",
+          "score": 0.6618812084197998
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 173,
+  "output_tokens": 501,
+  "seconds": 6.933273725000618,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: Según el corpus, ¿qué fallo del LR-200 relacionado con los cortes de luz se resolvió mediante una actualización, qué versión lo corrige y cuándo se publicó?\nDocumentos:\n[10_comparativa_competencia:14] Lumina LR-200 (referencia interna):\n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200",
+      "response": "No hay evidencia en los documentos proporcionados sobre un fallo del LR-200 relacionado con cortes de luz, la versión que lo corrige o la fecha de publicación de la actualización.",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 173,
+      "output_tokens": 501
+    }
+  ],
+  "answer_correctness": 0.14575980227041155,
+  "faithfulness": 1.0
+}

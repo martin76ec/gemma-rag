@@ -1,0 +1,19 @@
+Contactos de soporte — Lumina Robotics
+
+Soporte de hardware (averías mecánicas, piezas de repuesto, baterías):
+  Email: hardware@lumina-robotics.example
+  Teléfono: +34 900 111 222
+  Horario: lunes a viernes, 9:00–18:00
+
+Soporte de software (app, conectividad, actualizaciones de firmware):
+  Email: app-support@lumina-robotics.example
+  Chat dentro de la app Lumina Home, disponible 24/7
+
+Devoluciones, facturación y gestiones administrativas:
+  Email: rma@lumina-robotics.example
+  Solo por email; plazo medio de respuesta: 48 horas.
+
+Línea preferente para incidencias críticas del LR-200:
+  Teléfono: +34 900 333 444
+  Horario: lunes a domingo, 8:00–22:00
+  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.

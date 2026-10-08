@@ -1,0 +1,11 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1791488735, "env": {"SHELL": "/usr/bin/bash", "TERM": "xterm-ghostty"}}
+[0.009324, "o", "Evaluando grid-0-k4: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, character\r\nprogreso: 16 / 296 registros evaluados\r\n\r\n"]
+[4.012572, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 16 / 296 registros evaluados\r\n\r\n"]
+[8.015667, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 16 / 296 registros evaluados\r\n\r\n"]
+[12.018885, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[16.022385, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[20.025459, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[24.028806, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[28.031743, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[32.034399, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]
+[36.037626, "o", "Evaluando grid-1-k2: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, mrm8488/TinyBERT-spanish-uncased-finetuned-ner, semantic\r\nprogreso: 17 / 296 registros evaluados\r\n\r\n"]

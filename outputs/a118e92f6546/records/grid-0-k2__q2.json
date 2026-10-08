@@ -1,0 +1,66 @@
+{
+  "key": "grid-0-k2",
+  "system": "RAG simple",
+  "id": "q2",
+  "type": "factual",
+  "question": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+  "reference": "La garantía estándar del LR-200 es de 36 meses. Puede ampliarse opcionalmente hasta un total de 60 meses por 59 € adicionales.",
+  "sources": [
+    "06_garantias.txt"
+  ],
+  "response": "La garantía estándar del LR-200 es de 36 meses [10_comparativa_competencia:2].\n\nRespecto a la ampliación de la garantía, no se especifica hasta cuántos meses puede ampliarse ni cuál es el costo de dicha ampliación en los documentos proporcionados. Sin embargo, se menciona que la revisión de la política de garantía extendida está pendiente [05_acta_reunion_q3_2024:2].",
+  "retrieved_contexts": [
+    "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+    "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor "
+  ],
+  "documents": [
+    {
+      "id": "05_acta_reunion_q3_2024:2",
+      "source": "05_acta_reunion_q3_2024.txt",
+      "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+      "score": 0.6712676286697388
+    },
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "score": 0.6246787309646606
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?",
+      "documents": [
+        {
+          "id": "05_acta_reunion_q3_2024:2",
+          "source": "05_acta_reunion_q3_2024.txt",
+          "text": "a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una ",
+          "score": 0.6712676286697388
+        },
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+          "score": 0.6246787309646606
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 397,
+  "output_tokens": 636,
+  "seconds": 9.00116265899851,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la garantía estándar del LR-200 y hasta cuántos meses puede ampliarse? ¿Cuánto cuesta la ampliación?\nDocumentos:\n[05_acta_reunion_q3_2024:2] a mantener stock del LR-100 hasta agotar existencias, pero sin nueva producción a partir del 1 de noviembre de 2024.\n\n3. El LR-200 pasa a ser el modelo de referencia de la marca. El equipo de marketing ajustará la página principal a partir del 1 de octubre.\n\n4. Pendiente para la siguiente reunión: revisar la política de garantía extendida pensando en los clientes del LR-100 que decidan migrar al LR-200.\n\n5. Se establece una \n\n[10_comparativa_competencia:2] i-planta.\n\nLumina LR-200 (referencia interna):\n  Autonomía: 180 minutos\n  Mapeo: SLAM con LiDAR y cámara, multi-planta hasta 4 niveles\n  Garantía: 36 meses\n  Precio: 599 €\n  Ventaja principal: mejor relación garantía-precio del segmento y soporte multi-planta.\n\nConclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta. Conviene reforzar la comunicación sobre la función de fregado, ausente en el competidor ",
+      "response": "La garantía estándar del LR-200 es de 36 meses [10_comparativa_competencia:2].\n\nRespecto a la ampliación de la garantía, no se especifica hasta cuántos meses puede ampliarse ni cuál es el costo de dicha ampliación en los documentos proporcionados. Sin embargo, se menciona que la revisión de la política de garantía extendida está pendiente [05_acta_reunion_q3_2024:2].",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 397,
+      "output_tokens": 636
+    }
+  ],
+  "answer_correctness": 0.591342137167775,
+  "faithfulness": 0.75
+}

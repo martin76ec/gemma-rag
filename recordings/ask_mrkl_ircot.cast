@@ -1,0 +1,5 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1791488705, "idle_time_limit": 2.0, "env": {"SHELL": "/usr/bin/bash", "TERM": "xterm-ghostty"}}
+[2.306584, "o", "MRKL con IRCoT · sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 · top-k=2 · thinking=True\r\n"]
+[2.645496, "o", "\rLoading weights:   0%|                                 | 0/199 [00:00<?, ?it/s]"]
+[2.656403, "o", "\rLoading weights: 100%|████████████████████| 199/199 [00:00<00:00, 18556.39it/s]\r\n"]
+[68.246231, "o", "El error E07 es un fallo de comunicación con la base de carga [09_incidencias_conocidas:2].\r\n\r\nLa solución es:\r\n1. Reiniciar el robot.\r\n2. Si el error persiste tras dos intentos, se trata de un fallo de hardware y debe contactarse al canal correspondiente [09_incidencias_conocidas:2].\r\n\r\n4 llamadas · 3552 tokens · 64.20 s\r\nRespuesta, fuentes y traza: outputs/queries/20261008T194614066304Z.json\r\n"]

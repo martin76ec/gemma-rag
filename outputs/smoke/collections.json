@@ -1,0 +1,58 @@
+[
+  {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "vocab_size": 31002,
+    "chunks": 38
+  },
+  {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "semantic",
+    "vocab_size": 31002,
+    "chunks": 162
+  },
+  {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "dccuchile/bert-base-spanish-wwm-cased",
+    "chunker": "character",
+    "vocab_size": 31002,
+    "chunks": 38
+  },
+  {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "tokenizer": "dccuchile/bert-base-spanish-wwm-cased",
+    "chunker": "semantic",
+    "vocab_size": 31002,
+    "chunks": 162
+  },
+  {
+    "embedding": "intfloat/multilingual-e5-small",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "character",
+    "vocab_size": 31002,
+    "chunks": 37
+  },
+  {
+    "embedding": "intfloat/multilingual-e5-small",
+    "tokenizer": "mrm8488/TinyBERT-spanish-uncased-finetuned-ner",
+    "chunker": "semantic",
+    "vocab_size": 31002,
+    "chunks": 25
+  },
+  {
+    "embedding": "intfloat/multilingual-e5-small",
+    "tokenizer": "dccuchile/bert-base-spanish-wwm-cased",
+    "chunker": "character",
+    "vocab_size": 31002,
+    "chunks": 38
+  },
+  {
+    "embedding": "intfloat/multilingual-e5-small",
+    "tokenizer": "dccuchile/bert-base-spanish-wwm-cased",
+    "chunker": "semantic",
+    "vocab_size": 31002,
+    "chunks": 26
+  }
+]

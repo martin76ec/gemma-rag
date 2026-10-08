@@ -1,0 +1,64 @@
+{
+  "key": "runtime",
+  "system": "RAG simple",
+  "id": "q1",
+  "type": "factual",
+  "question": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+  "reference": "El LR-200 tiene una batería de 5200 mAh, una autonomía aproximada de 180 minutos y un tiempo de carga de 2,5 horas.",
+  "sources": [
+    "02_producto_lr200_specs.txt"
+  ],
+  "response": "La capacidad de batería del Lumina LR-200 es de 5200 mAh, su autonomía aproximada es de 180 minutos y el tiempo de carga es de 2.5 horas [02_producto_lr200_specs:0].",
+  "retrieved_contexts": [
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+    "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y "
+  ],
+  "documents": [
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+      "score": 0.6755883693695068
+    },
+    {
+      "id": "01_producto_lr100_specs:0",
+      "source": "01_producto_lr100_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+      "score": 0.6582609415054321
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?",
+      "documents": [
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth ",
+          "score": 0.6755883693695068
+        },
+        {
+          "id": "01_producto_lr100_specs:0",
+          "source": "01_producto_lr100_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+          "score": 0.6582609415054321
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 408,
+  "output_tokens": 60,
+  "seconds": 1.0020335389999673,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Qué capacidad de batería, autonomía aproximada y tiempo de carga tiene el Lumina LR-200?\nDocumentos:\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\n\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB\nConectividad: Wi-Fi dual-band, Bluetooth \n\n[01_producto_lr100_specs:0] Especificaciones técnicas — Lumina LR-100\nFecha de lanzamiento: marzo de 2022\nEstado: en catálogo (pendiente de discontinuación)\n\nDimensiones: 32 × 32 × 9 cm\nPeso: 3.1 kg\nBatería: 2400 mAh, autonomía aproximada de 90 minutos\nTiempo de carga: 4 horas\nCapacidad del depósito: 450 ml\nFunción de fregado: no disponible\nNivel de ruido: 68 dB\nConectividad: Wi-Fi 2.4 GHz\nSensores: bumper físico y ",
+      "response": "La capacidad de batería del Lumina LR-200 es de 5200 mAh, su autonomía aproximada es de 180 minutos y el tiempo de carga es de 2.5 horas [02_producto_lr200_specs:0].",
+      "input_tokens": 408,
+      "output_tokens": 60
+    }
+  ],
+  "answer_correctness": 0.9842020647611868,
+  "faithfulness": 1.0
+}

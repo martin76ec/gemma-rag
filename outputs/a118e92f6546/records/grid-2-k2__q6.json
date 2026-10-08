@@ -1,0 +1,68 @@
+{
+  "key": "grid-2-k2",
+  "system": "RAG simple",
+  "id": "q6",
+  "type": "multihop",
+  "question": "El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?",
+  "reference": "El error E07 indica un fallo de comunicación con la base de carga. Hay que reiniciar el robot. Si persiste tras dos intentos, se considera un fallo de hardware. El canal de hardware es hardware@lumina-robotics.example o el teléfono +34 900 111 222, de lunes a viernes de 9:00 a 18:00.",
+  "sources": [
+    "08_manual_uso_lr200.txt",
+    "09_incidencias_conocidas.txt",
+    "07_soporte_contactos.txt"
+  ],
+  "response": "*   **Significado del error E07:** No hay evidencia en los documentos.\n*   **Qué intentar:** No hay evidencia en los documentos.\n*   **Canal de soporte (tras dos intentos):** Los documentos no especifican el procedimiento a seguir tras dos intentos. Sin embargo, para incidencias críticas del LR-200, puede contactar por:\n    *   **Teléfono:** +34 900 333 444 (Horario: lunes a domingo, 8:00–22:00) [07_soporte_contactos:2]\n    *   **Email:** Solo por email (Plazo medio de respuesta: 48 horas) [07_soporte_contactos:2]\n\n*(Nota: El soporte telefónico y por email está reservado para errores que impidan el uso del producto y para clientes con garantía extendida activa [07_soporte_contactos:2]).*",
+  "retrieved_contexts": [
+    "e\n  Solo por email; plazo medio de respuesta: 48 horas.\n\nLínea preferente para incidencias críticas del LR-200:\n  Teléfono: +34 900 333 444\n  Horario: lunes a domingo, 8:00–22:00\n  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.\n",
+    "–E09, consulte el documento de incidencias co"
+  ],
+  "documents": [
+    {
+      "id": "07_soporte_contactos:2",
+      "source": "07_soporte_contactos.txt",
+      "text": "e\n  Solo por email; plazo medio de respuesta: 48 horas.\n\nLínea preferente para incidencias críticas del LR-200:\n  Teléfono: +34 900 333 444\n  Horario: lunes a domingo, 8:00–22:00\n  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.\n",
+      "score": 0.6339132189750671
+    },
+    {
+      "id": "08_manual_uso_lr200:3",
+      "source": "08_manual_uso_lr200.txt",
+      "text": "–E09, consulte el documento de incidencias co",
+      "score": 0.5698458552360535
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?",
+      "documents": [
+        {
+          "id": "07_soporte_contactos:2",
+          "source": "07_soporte_contactos.txt",
+          "text": "e\n  Solo por email; plazo medio de respuesta: 48 horas.\n\nLínea preferente para incidencias críticas del LR-200:\n  Teléfono: +34 900 333 444\n  Horario: lunes a domingo, 8:00–22:00\n  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.\n",
+          "score": 0.6339132189750671
+        },
+        {
+          "id": "08_manual_uso_lr200:3",
+          "source": "08_manual_uso_lr200.txt",
+          "text": "–E09, consulte el documento de incidencias co",
+          "score": 0.5698458552360535
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 279,
+  "output_tokens": 805,
+  "seconds": 11.146216157001618,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: El manual de mi LR-200 remite al documento de incidencias para el error E07. ¿Qué significa, qué debo intentar y, si persiste tras dos intentos, a qué canal de soporte de hardware puedo contactar por email o teléfono y en qué horario?\nDocumentos:\n[07_soporte_contactos:2] e\n  Solo por email; plazo medio de respuesta: 48 horas.\n\nLínea preferente para incidencias críticas del LR-200:\n  Teléfono: +34 900 333 444\n  Horario: lunes a domingo, 8:00–22:00\n  Reservada para errores que impidan el uso del producto y para clientes con garantía extendida activa.\n\n\n[08_manual_uso_lr200:3] –E09, consulte el documento de incidencias co",
+      "response": "*   **Significado del error E07:** No hay evidencia en los documentos.\n*   **Qué intentar:** No hay evidencia en los documentos.\n*   **Canal de soporte (tras dos intentos):** Los documentos no especifican el procedimiento a seguir tras dos intentos. Sin embargo, para incidencias críticas del LR-200, puede contactar por:\n    *   **Teléfono:** +34 900 333 444 (Horario: lunes a domingo, 8:00–22:00) [07_soporte_contactos:2]\n    *   **Email:** Solo por email (Plazo medio de respuesta: 48 horas) [07_soporte_contactos:2]\n\n*(Nota: El soporte telefónico y por email está reservado para errores que impidan el uso del producto y para clientes con garantía extendida activa [07_soporte_contactos:2]).*",
+      "thinking_enabled": true,
+      "thinking_returned": true,
+      "input_tokens": 279,
+      "output_tokens": 805
+    }
+  ],
+  "answer_correctness": 0.1989664905087648,
+  "faithfulness": 0.9
+}

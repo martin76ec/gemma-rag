@@ -1,0 +1,61 @@
+{
+  "not_class_results": true,
+  "id": "smoke",
+  "type": "factual",
+  "question": "¿Cuál es la autonomía del LR-200?",
+  "reference": "El Lumina LR-200 tiene una autonomía aproximada de 180 minutos.",
+  "response": "La autonomía aproximada del LR-200 es de 180 minutos [02_producto_lr200_specs:0].",
+  "retrieved_contexts": [
+    "Conclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.\nConviene reforzar la comunicación sobre la función de fregado, ausente en el competidor A, y sobre el precio frente al competidor B.",
+    "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB"
+  ],
+  "documents": [
+    {
+      "id": "10_comparativa_competencia:2",
+      "source": "10_comparativa_competencia.txt",
+      "text": "Conclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.\nConviene reforzar la comunicación sobre la función de fregado, ausente en el competidor A, y sobre el precio frente al competidor B.",
+      "score": 0.880867600440979
+    },
+    {
+      "id": "02_producto_lr200_specs:0",
+      "source": "02_producto_lr200_specs.txt",
+      "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+      "score": 0.8796076774597168
+    }
+  ],
+  "trace": [
+    {
+      "stage": "retrieval",
+      "query": "¿Cuál es la autonomía del LR-200?",
+      "documents": [
+        {
+          "id": "10_comparativa_competencia:2",
+          "source": "10_comparativa_competencia.txt",
+          "text": "Conclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.\nConviene reforzar la comunicación sobre la función de fregado, ausente en el competidor A, y sobre el precio frente al competidor B.",
+          "score": 0.880867600440979
+        },
+        {
+          "id": "02_producto_lr200_specs:0",
+          "source": "02_producto_lr200_specs.txt",
+          "text": "Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+          "score": 0.8796076774597168
+        }
+      ]
+    }
+  ],
+  "llm_calls": 1,
+  "input_tokens": 302,
+  "output_tokens": 33,
+  "seconds": 0.5650537429974065,
+  "calls": [
+    {
+      "prompt": "Responde en español, brevemente y solo con hechos respaldados por los documentos. Cita los identificadores entre corchetes. Si falta evidencia, indícalo. Si se pregunta por políticas, distingue las históricas de la vigente. No añadas comentarios sobre temas ajenos a la pregunta.\nPregunta: ¿Cuál es la autonomía del LR-200?\nDocumentos:\n[10_comparativa_competencia:2] Conclusión del equipo:\nEl LR-200 mantiene una ventaja clara en garantía y en gestión multi-planta.\nConviene reforzar la comunicación sobre la función de fregado, ausente en el competidor A, y sobre el precio frente al competidor B.\n\n[02_producto_lr200_specs:0] Especificaciones técnicas — Lumina LR-200\nFecha de lanzamiento: septiembre de 2024\nEstado: producto estrella\nDimensiones: 35 × 35 × 8 cm\nPeso: 3.4 kg\nBatería: 5200 mAh, autonomía aproximada de 180 minutos\nTiempo de carga: 2.5 horas\nCapacidad del depósito: 600 ml + tanque de agua de 250 ml\nFunción de fregado: sí, con dosificación automática\nNivel de ruido: 58 dB",
+      "response": "La autonomía aproximada del LR-200 es de 180 minutos [02_producto_lr200_specs:0].",
+      "input_tokens": 302,
+      "output_tokens": 33
+    }
+  ],
+  "answer_correctness": 0.7212516841503748,
+  "faithfulness": 1.0,
+  "system": "RAG simple"
+}
